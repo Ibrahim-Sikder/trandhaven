@@ -1,0 +1,78 @@
+.topBar{
+    background: #F4F6F8;
+    padding: 10px 0px;
+}
+.topbarRightSide{
+    width:400px; 
+}
+.topbarRightSide, .header, .topBarWrap, .search, .onlinShopping, .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topBarWrap, .headerWrap{
+    max-width:1200px;
+    margin:0 auto;
+}
+.header{
+    padding: 15px 0px;
+}
+.search{
+    width:400px;
+    height:45px;
+    border: 1px solid #ddd;
+    display: flex;
+    padding:10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.search input{
+    width:95%;
+}
+.search input:focus{
+    outline: none;
+}
+.search button{
+    border-left: 1px solid #ddd;
+    font-size: 30px;
+    padding-left:10px;
+}
+.searchIcon{
+    font-size:33px !important;
+}
+
+.cart{
+    background: #5800FF;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 96px;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 6px;
+
+}
+.shoppingCart{
+    position: relative;
+
+}
+.price{
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    left: 12px;
+}
+.nav{
+
+}
+.nav li{
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    padding:5px 25px;
+    transition: all .5s ease-in-out;
+}
