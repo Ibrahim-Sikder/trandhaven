@@ -62,3 +62,16 @@
 	font-size: 18px;
 	color: #fff;
 }
+.shopTitle {
+	position: relative;
+	width: 100%;
+}
+.shopTitle::after {
+	content: '';
+	position: absolute;
+	width: 139px;
+	left: 0px;
+	background: red;
+	height: 5px;
+	bottom: -10px;
+}

@@ -30,7 +30,7 @@ const Header = () => {
                     </div>
                     <div className="cart">
                        <div className="shoppingCart">
-                       <ShoppingCart className='searchIcon'/>
+                       <ShoppingCart className='shoopingCartIcon'/>
                        <h6 className="price">0</h6>
                        </div>
                         <div className='ml-2'>

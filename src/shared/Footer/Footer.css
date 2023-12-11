@@ -1,0 +1,11 @@
+.footer {
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 0;
+}
+.trendHaven {
+	width: 400px;
+}
