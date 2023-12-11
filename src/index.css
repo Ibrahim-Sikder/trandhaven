@@ -13,3 +13,36 @@ body{
     scroll-behavior: smooth;
     font-family: 'Merriweather', serif;
 }
+.awssld__controls button {
+    background: #5800FF !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 100% !important;
+}
+.awssld__controls button .awssld__controls__arrow-right {
+    opacity: none !important;
+}
+.awssld__controls__arrow-right:before, .awssld__controls__arrow-left:before{
+    top: -12% !important;
+    background: white !important;
+    height: 22px !important;
+}
+.awssld__controls__arrow-right:after, .awssld__controls__arrow-left:after {
+    height: 22px !important;
+    background: white !important;
+}
+.awssld__controls__arrow-right{
+    left:-5px !important;
+}
+.awssld__controls button .awssld__controls__arrow-right {
+    opacity: none !important;
+}
+.awssld__controls__arrow-left{
+    right:-5px !important;
+}
+.awssld__bullets button {
+  background: #5800FF !important;
+}
+.awssld__bullets .awssld__bullets--active {
+    background: red !important;
+}
