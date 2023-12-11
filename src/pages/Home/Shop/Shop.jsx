@@ -8,6 +8,7 @@ import fruit4 from '../../../../public/assets/fruit4.jpg'
 import fruit5 from '../../../../public/assets/fruit5.jpg'
 import fruit10 from '../../../../public/assets/shop.png'
 import Shop2 from './Shop2';
+import Category from './Category';
 
 const Shop = () => {
     const shopData = [
@@ -87,6 +88,7 @@ const Shop = () => {
                 </div>
             </div>
                <Shop2/>
+               <Category/>
         </div>
     );
 };
