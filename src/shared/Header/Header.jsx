@@ -15,14 +15,14 @@ const Header = () => {
                         <button><Search className='searchIcon'/> </button>
                     </div>
                     <div className="onlinShopping">
-                        <LocalPhone/>
+                        <LocalPhone className='searchIcon'/>
                         <div className='ml-2'>
                         <h4>Online Shopping </h4>
                         <span>+4748484959</span>
                         </div>
                     </div>
                     <div className="onlinShopping">
-                        <Person/>
+                        <Person className='searchIcon'/>
                         <div className='ml-2'>
                         <h4>Account </h4>
                         <span>Login/Register</span>

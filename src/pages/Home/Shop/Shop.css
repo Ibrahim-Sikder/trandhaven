@@ -1,0 +1,38 @@
+.shopWrap{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.shopCard{
+    width:250px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+overflow: hidden;
+border-radius: 5px;
+}
+.imgWrap{
+width:250px;
+height:230px;
+overflow: hidden;
+
+}
+.imgWrap img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all .5s cubic-bezier(0.49, 0.52, 0.67, 0.7);
+}
+.imgWrap img:hover{
+    transform: scale(1.2);
+}
+.shopContent{
+    padding:10px;
+}
+.addToCardBtn{
+    width: 100%;
+    background: #5800FF;
+    color: #fff;
+    height: 27px;
+}
+.reviewIcon{
+    color: #5800FE !important;
+}

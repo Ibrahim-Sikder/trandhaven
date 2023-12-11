@@ -39,6 +39,7 @@
 }
 .searchIcon{
     font-size:33px !important;
+    color: #5800FF !important;
 }
 
 .cart{
@@ -66,9 +67,6 @@
     line-height: 20px;
     text-align: center;
     left: 12px;
-}
-.nav{
-
 }
 .nav li{
     border-right: 1px solid #ddd;
