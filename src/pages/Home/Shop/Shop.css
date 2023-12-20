@@ -4,18 +4,61 @@
 }
 .shopCardsWrap {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 }
+
 .shopCard {
-	width: 230px;
+	width: 290px;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 	overflow: hidden;
 	border-radius: 5px;
 }
+.quickView {
+	background: rgba(0, 0, 0, 0.479);
+	position: absolute;
+	top: 110%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	width: 150px;
+	justify-content: space-between;
+	padding: 5px;
+	color: #fff;
+	visibility: hidden;
+	transition: all .5s cubic-bezier(0.41, 0.39, 0.68, 0.7);
+	transition: all .5s ease;
+}
+.quickView:hover,
+.shopIcon:hover {
+	color: #5800fe;
+}
+.shopCard:hover .quickView {
+	visibility: visible;
+	top: 60%;
+}
+.shopIcon {
+	font-size: 25px;
+	color: #ddd;
+	cursor: pointer;
+	transition: all .5s ease;
+}
+
+.iconText {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.shopReviewIcon {
+	color: #5800fe !important;
+	font-size: 18px !important;
+}
 .imgWrap {
-	width: 250px;
+	width: 290px;
 	height: 230px;
 	overflow: hidden;
+	position: relative;
 }
 .imgWrap img {
 	width: 100%;
@@ -71,19 +114,19 @@
 	position: absolute;
 	width: 139px;
 	left: 0px;
-	background: red;
+	background: #5800ff;
 	height: 5px;
 	bottom: -10px;
 }
 .categoryCard {
-    width: 200px;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    height: 250px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+	width: 200px;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	height: 250px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 .categoryImg {
 	width: 150px;
@@ -93,4 +136,81 @@
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+.categoryCards {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	place-items: center;
+}
+.shopModal {
+	color: black !important;
+	max-width: 1000px !important;
+	padding: 30px;
+}
+
+.shopSlider {
+	width: 400px !important;
+	height: 250px !important;
+	border-radius: 5px !important;
+}
+.increaseDecressBtnWrap {
+	border: 1px solid #ddd;
+	padding: 5px 10px;
+	width: 140px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+.increaseDecressBtnWrap small {
+	cursor: pointer;
+}
+.orderBtn {
+	width: 140px;
+	background: #5800fe;
+	height: 34px;
+	border-radius: 3px;
+	color: #fff;
+}
+.percentage {
+	width: 50px;
+	height: 50px;
+	background: red;
+	border-radius: 100%;
+	display: grid;
+	place-content: center;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	position: absolute;
+	top: 75px;
+	z-index: 2;
+}
+@media only screen and (max-width: 1024px) {
+	.categoryCards {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		place-items: center;
+	}
+	.shopWrap {
+		max-width: 100%;
+		padding: 0 20px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.categoryCards,
+	.shopCardsWrap {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.shopCard {
+		width: 232px;
+		margin-bottom: 15px;
+	}
+	.categoryCard {
+		margin-bottom: 15px;
+	}
+	.leftSide {
+		width: 350px;
+	}
 }

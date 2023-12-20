@@ -1,32 +1,47 @@
-.about{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-top:20px;
+.about {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin-top: 20px;
 }
-.aboutCard{
-    width: 280px;
-    padding: 20px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    border-radius: 10px;
-    text-align: center;
-    margin:10px;
-    transition: all .5s cubic-bezier(0.49, 0.52, 0.67, 0.7);
+.aboutCard {
+	width: 280px;
+	padding: 20px;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+	border-radius: 10px;
+	text-align: center;
+	margin: 10px;
+	transition: all .5s cubic-bezier(0.49, 0.52, 0.67, 0.7);
 }
-.aboutCard:hover{
-    background:#5800FF;
-    color:#fff;
+.aboutCard:hover {
+	background: #5800ff;
+	color: #fff;
 }
 
-.aboutWrap{
-    max-width: 1200px;
-    margin:50px auto;
-    margin-top:80px;
+.aboutWrap {
+	max-width: 1200px;
+	margin: 50px auto;
+	margin-top: 80px;
 }
-.aboutIcon{
-    font-size: 50px !important;
-    color: #5800FF;
-    transition: all .5s cubic-bezier(0.49, 0.52, 0.67, 0.7);
+.aboutIcon {
+	font-size: 50px !important;
+	color: #5800ff;
+	transition: all .5s cubic-bezier(0.49, 0.52, 0.67, 0.7);
 }
-.aboutCard:hover .aboutIcon{
-    color: #fff !important;
+.aboutCard:hover .aboutIcon {
+	color: #fff !important;
+}
+@media only screen and (max-width: 1024px) {
+	.aboutWrap {
+		max-width: 100%;
+		padding: 20px;
+	}
+	.aboutCard {
+		width: 230px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.about {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }

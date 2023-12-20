@@ -1,13 +1,12 @@
+
 /* eslint-disable react/no-unescaped-entities */
 import './Shop.css'
 import { StarBorder } from '@mui/icons-material'
-import fruit2 from '../../../../public/assets/fruit2.jpg'
-import fruit3 from '../../../../public/assets/fruit3.jpg'
-import fruit4 from '../../../../public/assets/fruit4.jpg'
-import fruit5 from '../../../../public/assets/fruit5.jpg'
-import fruit10 from '../../../../public/assets/shop.png'
-import Shops from './Shops'
-import Category from './Category'
+import fruit2 from '../../../../public/assets/vegetable.jpg'
+import fruit3 from '../../../../public/assets/vegetable2.png'
+import fruit4 from '../../../../public/assets/vegetable3.png'
+import fruit5 from '../../../../public/assets/vegetable4.jpg'
+import fruit10 from '../../../../public/assets/vegetable5.png'
 import { FaEye, FaHeart,FaPlus ,FaMinus  } from 'react-icons/fa'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
@@ -16,7 +15,7 @@ import 'swiper/css/navigation'
 import { Pagination, Navigation } from 'swiper/modules'
 import { useState } from 'react'
 
-const Shop = () => {
+const Shops = () => {
 	const [ order, setOrder ] = useState(0)
 
 	const incrementOrder = () => {
@@ -180,26 +179,11 @@ const Shop = () => {
 					))}
 				</div>
 			</div>
-			<div className="organicFruits my-16">
-				<div className="leftSide">
-					<img src={fruit10} alt="" />
-				</div>
-				<div className="rightSideContent">
-					<h3 className="text-xl lg:text-3xl font-bold mt-2">
-						"PrimePicks: Where Every Vegetable is Verified Perfection"
-					</h3>
-					<h6 className="text-xl font-bold">VeggieVista: Explore the Green Market Online</h6>
-					<p className="my-2">
-						Our commitment to quality is unwavering. With our freshness guarantee, you can trust that every
-						vegetable you receive is handpicked"{' '}
-					</p>
-					<button className="shopBtn">Shop Now </button>
-				</div>
-			</div>
-			<Shops/>
-			<Category />
+		
+	
+	
 		</div>
 	)
 }
 
-export default Shop
+export default Shops

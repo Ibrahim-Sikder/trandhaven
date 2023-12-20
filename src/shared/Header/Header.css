@@ -81,3 +81,22 @@
 	padding: 5px 25px;
 	transition: all .5s ease-in-out;
 }
+
+@media only screen and (max-width: 1024px) {
+	.topBarWrap,
+	.headerWrap {
+		max-width: 100%;
+	}
+	.topBarWrap {
+		padding: 20px;
+	}
+	.headerWrap {
+		padding: 0 20px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.nav {
+		display: none;
+	}
+}
