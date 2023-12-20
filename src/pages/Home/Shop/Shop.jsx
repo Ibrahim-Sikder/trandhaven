@@ -63,7 +63,7 @@ const Shop = () => {
 	return (
 		<div className="shopWrap">
 			<div>
-				<h3 className="text-2xl font-bold mb-8 shopTitle">Nature's Bounty, Delivered Fresh</h3>
+				<h3 className="text-2xl text-center md:text-left font-bold mb-8 shopTitle">Nature's Bounty, Delivered Fresh</h3>
 				<div className="shopCardsWrap">
 					{shopData.map((shop) => (
 						<div key={shop.id} className="shopCard">
@@ -185,7 +185,7 @@ const Shop = () => {
 					<img src={fruit10} alt="" />
 				</div>
 				<div className="rightSideContent">
-					<h3 className="text-xl lg:text-3xl font-bold mt-2">
+					<h3 className="text-2xl  lg:text-3xl font-bold mt-2">
 						"PrimePicks: Where Every Vegetable is Verified Perfection"
 					</h3>
 					<h6 className="text-xl font-bold">VeggieVista: Explore the Green Market Online</h6>

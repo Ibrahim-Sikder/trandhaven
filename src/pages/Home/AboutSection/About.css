@@ -2,6 +2,7 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	margin-top: 20px;
+	place-items: center;
 }
 .aboutCard {
 	width: 280px;
@@ -43,5 +44,13 @@
 @media only screen and (max-width: 768px) {
 	.about {
 		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media only screen and (max-width: 500px) {
+	.about {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.aboutCard {
+		width: 250px;
 	}
 }

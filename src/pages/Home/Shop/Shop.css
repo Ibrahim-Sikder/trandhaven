@@ -5,6 +5,7 @@
 .shopCardsWrap {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
+	place-items: center;
 }
 
 .shopCard {
@@ -212,5 +213,27 @@
 	}
 	.leftSide {
 		width: 350px;
+	}
+	.shopWrap {
+		padding: 0 10px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.categoryCards,
+	.shopCardsWrap {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.shopCard {
+		width: 250px;
+	}
+	.organicFruits {
+		display: block;
+		padding: 0 20px;
+	}
+	.rightSideContent {
+		width: 100%;
+	}
+	.shopTitle::after {
+		left: 35px;
 	}
 }

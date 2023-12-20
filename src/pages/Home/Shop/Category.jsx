@@ -33,7 +33,7 @@ const Category = () => {
 	]
 	return (
 		<div className='mt-10'>
-			<h3 className='text-2xl font-bold mb-8 shopTitle'>Shop By Category </h3>
+			<h3 className='text-2xl text-center md:text-left font-bold mb-8 shopTitle'>Shop By Category </h3>
 			<div className='categoryCards'>
 			{
 				categoryData.map(category=><div key={category._id} className="categoryCard">
