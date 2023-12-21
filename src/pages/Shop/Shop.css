@@ -51,8 +51,44 @@
 	margin: 15px;
 }
 .sortProduct {
-	width: 350px !important;
+	width: 300px !important;
 	height: 35px !important;
+}
+.pagination {
+	display: flex;
+	align-items: center;
+	width: 300px;
+	margin: 0 auto;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+.pagination span {
+	font-size: 20px;
+}
+
+.arrowLeft,
+.arrowRight,
+.pagination span,
+.activePagination {
+	width: 25px;
+	height: 25px;
+	background: #5800ff;
+	border-radius: 100%;
+	color: #fff;
+	display: grid;
+	place-content: center;
+}
+.pagination span {
+	background: transparent;
+	color: black;
+	transition: all .5s ease;
+}
+.pagination span:hover {
+	background: #5800ff;
+	color: #fff;
+}
+.activePagination{
+	background:#5800ff;
 }
 
 @media only screen and (max-width: 1024px) {

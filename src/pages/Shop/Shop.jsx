@@ -6,11 +6,24 @@ import fruit3 from '../../../public/assets/vegetable2.png'
 import fruit4 from '../../../public/assets/vegetable3.png'
 import fruit5 from '../../../public/assets/vegetable4.jpg'
 import fruit10 from '../../../public/assets/vegetable5.png'
+import img from '../../../public/assets/img.jpg'
+import img2 from '../../../public/assets/img2.jpg'
+import img3 from '../../../public/assets/img.jpg'
+import img4 from '../../../public/assets/img3.jpg'
+import img5 from '../../../public/assets/img4.jpg'
+import img6 from '../../../public/assets/img5.jpg'
+import img7 from '../../../public/assets/img6.jpg'
+import img8 from '../../../public/assets/img7.jpg'
+import img9 from '../../../public/assets/img8.jpg'
+import img10 from '../../../public/assets/img9.png'
+import img11 from '../../../public/assets/img.jpg'
+import img12 from '../../../public/assets/img.jpg'
+
 import { StarBorder } from '@mui/icons-material'
 import InputLabel from '@mui/material/InputLabel'
 import FormControl from '@mui/material/FormControl'
 import Select from '@mui/material/Select'
-import { FaEye, FaHeart, FaPlus, FaMinus } from 'react-icons/fa'
+import { FaEye, FaHeart, FaPlus, FaMinus,FaAngleLeft ,FaAngleRight  } from 'react-icons/fa'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -32,13 +45,14 @@ const Shop = () => {
 	}
 
 	const shopData = [
-		// {
-		// 	id: 1,
-		// 	name: 'Apple',
-		// 	desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
-		// 	price: 399,
-		// 	img: fruit2
-		// },
+		
+        {
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: fruit2
+		},
 		{
 			id: 1,
 			name: 'Apple',
@@ -58,8 +72,85 @@ const Shop = () => {
 			name: 'Apple',
 			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
 			price: 399,
-			img: fruit5
-		}
+			img: img5
+		},
+        {
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: img4
+		},
+		{
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: img3
+		},
+		{
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: img2
+		},
+		{
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: img
+		},
+        {
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: img6
+		},
+		{
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: img7
+		},
+		{
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: img8
+		},
+		{
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: img9
+		},
+        {
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: img10
+		},
+		{
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: img11
+		},
+		{
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: img12
+		},
 	]
 	return (
 		<div>
@@ -336,6 +427,16 @@ const Shop = () => {
 								</div>
 							))}
 						</div>
+                        <div className="pagination">
+                            <span><FaAngleLeft className='arrowLeft' /></span>
+                            <span>1</span>
+                            <span>2</span>
+                            <span className='activePagination'>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                            <span><FaAngleRight className='arrowRight' /></span>
+
+                        </div>
 					</div>
 				</div>
 			</div>
