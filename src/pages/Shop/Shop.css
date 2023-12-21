@@ -1,0 +1,38 @@
+.shopContainer {
+	margin-top: 30px;
+}
+.shopContainerLeftSide {
+	width: 300px;
+	border-right: 1px solid #ddd;
+}
+.productCategories ul li,
+.color ul li {
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+.rang {
+	margin: 20px 0;
+	width: 200px;
+}
+.filterBtn,
+.productTagBtn {
+	background: #5800ff;
+	color: #fff;
+	border-radius: 5px;
+	width: 100px;
+	height: 35px;
+}
+.productTagButtonGroup button {
+	margin-right: 5px;
+}
+.productTagBtn {
+	width: auto;
+	border-radius: 20px;
+	background: #edeff1;
+	color: black;
+	margin: 5px;
+	padding: 5px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

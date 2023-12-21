@@ -1,7 +1,7 @@
 import './Footer.css'
 const Footer = () => {
     return (
-        <div>
+        <div className='wrapContainer'>
             <div className="footer">
                 <div className='trendHaven'>
                     <h3 className="text-3xl font-bold">Trendhaven</h3>

@@ -1,7 +1,4 @@
-.shopWrap {
-	max-width: 1200px;
-	margin: 0 auto;
-}
+
 .shopCardsWrap {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -193,10 +190,6 @@
 		grid-template-columns: repeat(5, 1fr);
 		place-items: center;
 	}
-	.shopWrap {
-		max-width: 100%;
-		padding: 0 20px;
-	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -213,9 +206,6 @@
 	}
 	.leftSide {
 		width: 350px;
-	}
-	.shopWrap {
-		padding: 0 10px;
 	}
 }
 @media only screen and (max-width: 500px) {

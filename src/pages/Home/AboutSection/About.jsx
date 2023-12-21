@@ -26,8 +26,8 @@ const About = () => {
 
     ]
     return (
-        <div>
-            <div className="aboutWrap">
+        <div className='mt-[80px] '>
+            <div className="wrapContainer ">
                 <h2 className="text-4xl text-center my-3 font-bol">Why trust Trendhaven ?</h2>
                 <div className="about">
                {

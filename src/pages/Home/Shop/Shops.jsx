@@ -59,8 +59,9 @@ const Shops = () => {
 			img: fruit5
 		}
 	]
+
 	return (
-		<div className="shopWrap">
+		<div className="wrapContainer">
 			<div>
 				<h3 className="text-2xl text-center md:text-left font-bold mb-8 shopTitle">Nature's Bounty, Delivered Fresh</h3>
 				<div className="shopCardsWrap">

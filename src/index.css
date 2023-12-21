@@ -57,3 +57,32 @@ body{
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after, .swiper-button-next:after {
     font-size: 22px !important;
 }
+.wrapContainer {
+	width: 1200px;
+	margin: 0 auto;
+}
+.multi-range-slider {
+    display: flex;
+    position: relative;
+    border: none !important;
+     padding: 0 !important ; 
+    box-shadow: none !important;
+}
+.multi-range-slider .ruler .ruler-rule, .multi-range-slider .ruler, .multi-range-slider .label{
+    display: none !important;
+}
+
+
+
+@media only screen and (max-width:1024px){
+    .wrapContainer {
+        width: 100%;
+        padding:0 20px;
+    
+}
+
+}
+
+@media only screen and (max-width:768px){
+    
+}
