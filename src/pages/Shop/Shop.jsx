@@ -257,6 +257,7 @@ const Shop = () => {
 								<img className="w-[80px]" src={fruit2} alt="fruit" />
 								<div className=" ml-8">
 									<div>Zesco Ripe Bananas </div>
+									
 									<div>
 										<div>
 											<StarBorder className="shopReviewIcon" />

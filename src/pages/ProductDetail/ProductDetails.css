@@ -1,0 +1,13 @@
+.productDetailsContainer {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-top: 50px;
+}
+.productDetailsLeftSide {
+	width: 400px;
+}
+.zoomImage {
+	width: 400px !important;
+	height: 500px !important;
+}

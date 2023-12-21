@@ -71,6 +71,17 @@ body{
 .multi-range-slider .ruler .ruler-rule, .multi-range-slider .ruler, .multi-range-slider .label{
     display: none !important;
 }
+.slick-next, .slick-prev {
+    right: -25px;
+    background: #5800FF !important;
+    width:25px !important;
+    height:25px !important;
+    border-radius: 100%;
+
+}
+
+
+
 
 
 
