@@ -59,6 +59,7 @@ const Shops = () => {
 			img: fruit5
 		}
 	]
+	
 
 	return (
 		<div className="wrapContainer">

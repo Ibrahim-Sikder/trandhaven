@@ -1,6 +1,11 @@
 .shopContainer {
 	margin-top: 30px;
 }
+.shopContainer {
+	display: flex;
+	justify-content: space-between;
+}
+
 .shopContainerLeftSide {
 	width: 300px;
 	border-right: 1px solid #ddd;
@@ -35,4 +40,43 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.containerShopCard {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	place-items: center;
+}
+.shopCard2 {
+	width: 280px;
+	margin: 15px;
+}
+.sortProduct {
+	width: 350px !important;
+	height: 35px !important;
+}
+
+@media only screen and (max-width: 1024px) {
+	.shopContainer {
+		flex-direction: column;
+	}
+	.shopContainerLeftSide {
+		order: 2;
+		width: 100%;
+	}
+
+	.shopCard2 {
+		width: 300px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.shopCard2 {
+		width: 240px;
+		margin-right: 5px;
+		margin-left: 0;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.containerShopCard {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }

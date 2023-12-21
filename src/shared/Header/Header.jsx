@@ -7,7 +7,8 @@ const Header = () => {
         <div className=''>
             <div>
                <TopBar/>
-                <div className="headerWrap">
+               <div className="navBarWrap">
+               <div className="headerWrap">
                 <div className="header">
                     <h3 className="text-3xl font-bold">Trendhaven</h3>
                     <div className='search'>
@@ -48,6 +49,7 @@ const Header = () => {
                     <li>Flash Salse <ExpandMore/> </li>
                 </ul>
                 </div>
+               </div>
             </div>
         </div>
     );
