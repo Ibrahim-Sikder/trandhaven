@@ -1,5 +1,5 @@
 import './Header.css'
-import { LocalPhone,Person, ShoppingCart, Search, ExpandMore} from '@mui/icons-material';
+import { Person, ShoppingCart, Search, ExpandMore} from '@mui/icons-material';
 import TopBar from './TopBar';
 
 const Header = () => {
@@ -15,19 +15,10 @@ const Header = () => {
                         <input type="text" placeholder='Search here...' autoComplete='off'/>
                         <button><Search className='searchIcon'/> </button>
                     </div>
-                    <div className="onlinShopping">
-                        <LocalPhone className='searchIcon'/>
-                        <div className='ml-2'>
-                        <h4>Online Shopping </h4>
-                        <span>+4748484959</span>
-                        </div>
-                    </div>
-                    <div className="onlinShopping">
-                        <Person className='searchIcon'/>
-                        <div className='ml-2'>
-                        <h4>Account </h4>
-                        <span>Login/Register</span>
-                        </div>
+                   
+                  <div className="flex items-center">
+                  <div className="onlinShopping">
+                        <Person className='personIcon'/>
                     </div>
                     <div className="cart">
                        <div className="shoppingCart">
@@ -39,6 +30,7 @@ const Header = () => {
                             <p>Cart</p>
                         </div>
                     </div>
+                  </div>
                 </div>
                 <ul className='nav'>
                     <li>Home <ExpandMore/> </li>

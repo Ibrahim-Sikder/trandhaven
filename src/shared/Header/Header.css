@@ -1,6 +1,13 @@
 .topBar {
 	background: #f4f6f8;
 	padding: 10px 0px;
+	background-color: #5800ff;
+	color: #fff;
+}
+.navBarWrap {
+	box-shadow: #5800ff 0px 3px 5px -3px;
+	background-color: #5800ff;
+	color: #fff;
 }
 .topbarRightSide {
 	width: 400px;
@@ -23,15 +30,13 @@
 	max-width: 1200px;
 	margin: 0 auto;
 }
-.navBarWrap {
-	box-shadow: #5800ff 0px 3px 5px -3px;
-}
+
 .header {
 	padding: 15px 0px;
 }
 .search {
-	width: 400px;
-	height: 45px;
+	width: 800px;
+	height: 60px;
 	border: 1px solid #ddd;
 	display: flex;
 	padding: 10px;
@@ -40,6 +45,8 @@
 }
 .search input {
 	width: 95%;
+	height: 100%;
+	background: transparent;
 }
 .search input:focus {
 	outline: none;
@@ -49,10 +56,14 @@
 	font-size: 30px;
 	padding-left: 10px;
 }
-.searchIcon,
-.shoopingCartIcon {
+.searchIcon {
 	font-size: 33px !important;
-	color: #5800ff !important;
+}
+.personIcon {
+	font-size: 50px !important;
+}
+.shoopingCartIcon {
+	font-size: 40px !important;
 }
 .shoopingCartIcon {
 	color: #fff !important;
@@ -71,15 +82,15 @@
 	position: relative;
 }
 .price {
-	position: absolute;
-	top: -10px;
-	width: 20px;
-	height: 20px;
-	background: red;
-	border-radius: 50%;
-	line-height: 20px;
-	text-align: center;
-	left: 12px;
+    position: absolute;
+    top: -4px;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    left: 23px;
 }
 .nav li {
 	border-right: 1px solid #ddd;
