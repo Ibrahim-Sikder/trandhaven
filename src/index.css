@@ -4,96 +4,96 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
-    margin:0;
-    padding:0;
+* {
+	margin: 0;
+	padding: 0;
 }
-body{
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'Merriweather', serif;
+body {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'Merriweather', serif;
 }
 .awssld__controls button {
-    background: #5800FF !important;
-    width: 40px !important;
-    height: 40px !important;
-    border-radius: 100% !important;
+	background: #00ab55 !important;
+	width: 40px !important;
+	height: 40px !important;
+	border-radius: 100% !important;
 }
 .awssld__controls button .awssld__controls__arrow-right {
-    opacity: none !important;
+	opacity: none !important;
 }
-.awssld__controls__arrow-right:before, .awssld__controls__arrow-left:before{
-    top: -12% !important;
-    background: white !important;
-    height: 22px !important;
+.awssld__controls__arrow-right:before,
+.awssld__controls__arrow-left:before {
+	top: -12% !important;
+	background: white !important;
+	height: 22px !important;
 }
-.awssld__controls__arrow-right:after, .awssld__controls__arrow-left:after {
-    height: 22px !important;
-    background: white !important;
+.awssld__controls__arrow-right:after,
+.awssld__controls__arrow-left:after {
+	height: 22px !important;
+	background: white !important;
 }
-.awssld__controls__arrow-right{
-    left:-5px !important;
+.awssld__controls__arrow-right {
+	left: -5px !important;
 }
 .awssld__controls button .awssld__controls__arrow-right {
-    opacity: none !important;
+	opacity: none !important;
 }
-.awssld__controls__arrow-left{
-    right:-5px !important;
+.awssld__controls__arrow-left {
+	right: -5px !important;
 }
 .awssld__bullets button {
-  background: #5800FF !important;
+	background: #00ab55 !important;
 }
 .awssld__bullets .awssld__bullets--active {
-    background: red !important;
+	background: red !important;
 }
-.swiper-button-prev,.swiper-button-next, .swiper-rtl .swiper-button-next {
-    right: auto;
-    width: 40px !important;
-    height: 40px !important;
-    background: #5800FF;
-    border-radius: 100%;
-    color: #fff !important;
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-rtl .swiper-button-next {
+	right: auto;
+	width: 40px !important;
+	height: 40px !important;
+	background: #00ab55;
+	border-radius: 100%;
+	color: #fff !important;
 }
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after, .swiper-button-next:after {
-    font-size: 22px !important;
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after {
+	font-size: 22px !important;
 }
 .wrapContainer {
 	width: 1200px;
 	margin: 0 auto;
 }
 .multi-range-slider {
-    display: flex;
-    position: relative;
-    border: none !important;
-     padding: 0 !important ; 
-    box-shadow: none !important;
+	display: flex;
+	position: relative;
+	border: none !important;
+	padding: 0 !important;
+	box-shadow: none !important;
 }
-.multi-range-slider .ruler .ruler-rule, .multi-range-slider .ruler, .multi-range-slider .label{
-    display: none !important;
+.multi-range-slider .ruler .ruler-rule,
+.multi-range-slider .ruler,
+.multi-range-slider .label {
+	display: none !important;
 }
-.slick-next, .slick-prev {
-    right: -25px;
-    background: #5800FF !important;
-    width:25px !important;
-    height:25px !important;
-    border-radius: 100%;
-
-}
-
-
-
-
-
-
-@media only screen and (max-width:1024px){
-    .wrapContainer {
-        width: 100%;
-        padding:0 20px;
-    
+.slick-next,
+.slick-prev {
+	right: -25px;
+	background: #00ab55 !important;
+	width: 25px !important;
+	height: 25px !important;
+	border-radius: 100%;
 }
 
+@media only screen and (max-width: 1024px) {
+	.wrapContainer {
+		width: 100%;
+		padding: 0 20px;
+	}
 }
 
-@media only screen and (max-width:768px){
-    
+@media only screen and (max-width: 768px) {
 }

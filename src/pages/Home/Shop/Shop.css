@@ -1,4 +1,3 @@
-
 .shopCardsWrap {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -73,7 +72,7 @@
 }
 .addToCardBtn {
 	width: 100%;
-	background: #5800ff;
+	background: #00ab55;
 	color: #fff;
 	height: 27px;
 }
@@ -96,7 +95,7 @@
 	width: 550px;
 }
 .shopBtn {
-	background: #5800ff;
+	background: #00ab55;
 	width: 100px;
 	height: 33px;
 	border-radius: 5px;
@@ -112,7 +111,7 @@
 	position: absolute;
 	width: 139px;
 	left: 0px;
-	background: #5800ff;
+	background: #00ab55;
 	height: 5px;
 	bottom: -10px;
 }

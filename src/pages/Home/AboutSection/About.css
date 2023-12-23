@@ -14,13 +14,13 @@
 	transition: all .5s cubic-bezier(0.49, 0.52, 0.67, 0.7);
 }
 .aboutCard:hover {
-	background: #5800ff;
+	background: #00ab55;
 	color: #fff;
 }
 
 .aboutIcon {
 	font-size: 50px !important;
-	color: #5800ff;
+	color: #00ab55;
 	transition: all .5s cubic-bezier(0.49, 0.52, 0.67, 0.7);
 }
 .aboutCard:hover .aboutIcon {

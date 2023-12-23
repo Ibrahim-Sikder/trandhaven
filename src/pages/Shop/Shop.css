@@ -21,7 +21,7 @@
 }
 .filterBtn,
 .productTagBtn {
-	background: #5800ff;
+	background: #00ab55;
 	color: #fff;
 	border-radius: 5px;
 	width: 100px;
@@ -72,7 +72,7 @@
 .activePagination {
 	width: 25px;
 	height: 25px;
-	background: #5800ff;
+	background: #00ab55;
 	border-radius: 100%;
 	color: #fff;
 	display: grid;
@@ -84,11 +84,11 @@
 	transition: all .5s ease;
 }
 .pagination span:hover {
-	background: #5800ff;
+	background: #00ab55;
 	color: #fff;
 }
-.activePagination{
-	background:#5800ff;
+.activePagination {
+	background: #00ab55;
 }
 
 @media only screen and (max-width: 1024px) {

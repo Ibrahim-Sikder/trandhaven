@@ -1,12 +1,12 @@
 .topBar {
 	background: #f4f6f8;
 	padding: 10px 0px;
-	background-color: #5800ff;
+	background-color: #00ab55;
 	color: #fff;
 }
 .navBarWrap {
-	box-shadow: #5800ff 0px 3px 5px -3px;
-	background-color: #5800ff;
+	box-shadow: #00ab55 0px 3px 5px -3px;
+	background-color: #00ab55;
 	color: #fff;
 }
 .topbarRightSide {
@@ -69,7 +69,7 @@
 	color: #fff !important;
 }
 .cart {
-	background: #5800ff;
+	background: #00ab55;
 	display: flex;
 	align-items: center;
 	color: #fff;
@@ -82,15 +82,15 @@
 	position: relative;
 }
 .price {
-    position: absolute;
-    top: -4px;
-    width: 20px;
-    height: 20px;
-    background: red;
-    border-radius: 50%;
-    line-height: 20px;
-    text-align: center;
-    left: 23px;
+	position: absolute;
+	top: -4px;
+	width: 20px;
+	height: 20px;
+	background: #ffb240;
+	border-radius: 50%;
+	line-height: 20px;
+	text-align: center;
+	left: 23px;
 }
 .nav li {
 	border-right: 1px solid #ddd;

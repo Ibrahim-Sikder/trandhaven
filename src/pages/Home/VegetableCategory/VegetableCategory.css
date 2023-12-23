@@ -1,0 +1,49 @@
+.vegetabelCategoryWraps {
+	margin-top: 120px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	place-content: center;
+}
+.vegetabelCategory {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.vegetabelCategory::after {
+	content: '';
+	position: absolute;
+	width: 91px;
+	height: 3px;
+	background: #00ab55;
+	right: -44px;
+	top: 77px;
+	z-index: -2;
+}
+.vegetableImgWrap img {
+	width: 65%;
+	margin: 0 auto;
+	object-fit: cover;
+}
+.vegetabelCategory:last-child::after {
+	visibility: hidden;
+}
+.vegetableImgWrap {
+	width: 150px;
+	aspect-ratio: 1/1;
+	border-radius: 100%;
+	background: #00ab55;
+	display: grid;
+	place-content: center;
+	transition: all .5s cubic-bezier(0.42, 0.43, 0.67, 0.7);
+	cursor: pointer;
+}
+.vegetableImgWrap:hover {
+	background-color: #ffb240;
+}
+
+
+.vegetableImgWrap:hover .vegetableIcon {
+	color: #00ab55 !important;
+}
