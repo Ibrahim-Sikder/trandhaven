@@ -23,13 +23,14 @@ import { StarBorder } from '@mui/icons-material'
 import InputLabel from '@mui/material/InputLabel'
 import FormControl from '@mui/material/FormControl'
 import Select from '@mui/material/Select'
-import { FaEye, FaHeart, FaPlus, FaMinus,FaAngleLeft ,FaAngleRight  } from 'react-icons/fa'
+import { FaEye, FaHeart, FaPlus, FaMinus, FaAngleLeft, FaAngleRight } from 'react-icons/fa'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import { Pagination, Navigation } from 'swiper/modules'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 const Shop = () => {
 	const [ order, setOrder ] = useState(0)
 
@@ -45,8 +46,7 @@ const Shop = () => {
 	}
 
 	const shopData = [
-		
-        {
+		{
 			id: 1,
 			name: 'Apple',
 			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
@@ -74,7 +74,7 @@ const Shop = () => {
 			price: 399,
 			img: img5
 		},
-        {
+		{
 			id: 1,
 			name: 'Apple',
 			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
@@ -102,7 +102,7 @@ const Shop = () => {
 			price: 399,
 			img: img
 		},
-        {
+		{
 			id: 1,
 			name: 'Apple',
 			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
@@ -130,7 +130,7 @@ const Shop = () => {
 			price: 399,
 			img: img9
 		},
-        {
+		{
 			id: 1,
 			name: 'Apple',
 			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
@@ -150,7 +150,7 @@ const Shop = () => {
 			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
 			price: 399,
 			img: img12
-		},
+		}
 	]
 	return (
 		<div>
@@ -257,7 +257,7 @@ const Shop = () => {
 								<img className="w-[80px]" src={fruit2} alt="fruit" />
 								<div className=" ml-8">
 									<div>Zesco Ripe Bananas </div>
-									
+
 									<div>
 										<div>
 											<StarBorder className="shopReviewIcon" />
@@ -289,30 +289,37 @@ const Shop = () => {
 						</div>
 					</div>
 					<div className="shopContainerRightSide">
-                       
-                           <div className="flex items-center justify-between my-8 px-5">
-                           <h3 className="text-xl">Showing 150 Products </h3>
-                            <div>
-                            <FormControl className="sortProduct">
-							<InputLabel htmlFor="grouped-native-select">Sort By Product  </InputLabel>
-							<Select native defaultValue="" id="grouped-native-select" label="Select Category ">
-								<option value="Default Soring "> Default Soring </option>
-								<option aria-label="None" value="" />
-								<option value="Sort By Popularity "> Sort By Popularity </option>
-								<option value="Sort By Latest Product "> Sort By Latest Product </option>
-								<option value="Sort By Price Low to High "> Sort By Price Low to High </option>
-								<option value="Sort By Average Rating "> Sort By Average Rating </option>
-							</Select>
-						</FormControl>
-                            </div>
-                           </div>
-                     
+						<div className="allCategory  ml-10">
+							<span>Vegetable</span>
+							<span>Fish</span>
+							<span>Green Onion </span>
+							<span>Milk & Drinks </span>
+							<span>Meat </span>
+						</div>
+						<div className="flex items-center justify-between my-8 px-5">
+							<h3 className="text-xl">Showing 150 Products </h3>
+							<div>
+								<FormControl className="sortProduct">
+									<InputLabel htmlFor="grouped-native-select">Sort By Product </InputLabel>
+									<Select native defaultValue="" id="grouped-native-select" label="Select Category ">
+										<option value="Default Soring "> Default Soring </option>
+										<option aria-label="None" value="" />
+										<option value="Sort By Popularity "> Sort By Popularity </option>
+										<option value="Sort By Latest Product "> Sort By Latest Product </option>
+										<option value="Sort By Price Low to High "> Sort By Price Low to High </option>
+										<option value="Sort By Average Rating "> Sort By Average Rating </option>
+									</Select>
+								</FormControl>
+							</div>
+						</div>
 
 						<div className="containerShopCard">
 							{shopData.map((shop) => (
 								<div key={shop.id} className="shopCard shopCard2">
 									<div className="imgWrap">
-										<img src={shop.img} alt="" />
+										<Link to="/detail">
+											<img src={shop.img} alt="" />
+										</Link>
 										<div className="quickView">
 											<div className="iconText">
 												<FaHeart className="shopIcon" />
@@ -335,7 +342,7 @@ const Shop = () => {
 															<div>
 																<div className="flex">
 																	<h3 className="text-2xl font-bold">Orange Peel </h3>
-																	<span className="text-[#5800fe] ml-2">500G</span>
+																	<span className="text-[#00AB55] ml-2">500G</span>
 																</div>
 																<div className="flex items-center my-2">
 																	<span>
@@ -388,7 +395,7 @@ const Shop = () => {
 																</p>
 																<span>
 																	Availability: ৫৫৫{' '}
-																	<small className="text-[#5800fe]">in stock </small>{' '}
+																	<small className="text-[#00AB55]">in stock </small>{' '}
 																</span>
 																<div className="increaseDecressBtnWrap">
 																	<small onClick={decrementOrder}>
@@ -409,35 +416,40 @@ const Shop = () => {
 											</dialog>
 										</div>
 									</div>
-									<div className="shopContent">
-										<h3 className="text-2xl font-bold">{shop.name}</h3>
-										<p className="my-1">{shop.desc} </p>
-										<div>
-											<StarBorder className="reviewIcon" />
-											<StarBorder className="reviewIcon" />
-											<StarBorder className="reviewIcon" />
-											<StarBorder className="reviewIcon" />
-											<StarBorder className="reviewIcon" />
-										</div>
-										<span className="block my-2">
-											BDT <b>{shop.price}৳</b>
-										</span>
+									<Link to="/detail">
+										<div className="shopContent">
+											<h3 className="text-2xl font-bold">{shop.name}</h3>
+											<p className="my-1">{shop.desc} </p>
+											<div>
+												<StarBorder className="reviewIcon" />
+												<StarBorder className="reviewIcon" />
+												<StarBorder className="reviewIcon" />
+												<StarBorder className="reviewIcon" />
+												<StarBorder className="reviewIcon" />
+											</div>
+											<span className="block my-2">
+												BDT <b>{shop.price}৳</b>
+											</span>
 
-										<button className="addToCardBtn">Add to cart</button>
-									</div>
+											<button className="addToCardBtn">Add to cart</button>
+										</div>
+									</Link>
 								</div>
 							))}
 						</div>
-                        <div className="pagination">
-                            <span><FaAngleLeft className='arrowLeft' /></span>
-                            <span>1</span>
-                            <span>2</span>
-                            <span className='activePagination'>3</span>
-                            <span>4</span>
-                            <span>5</span>
-                            <span><FaAngleRight className='arrowRight' /></span>
-
-                        </div>
+						<div className="pagination">
+							<span>
+								<FaAngleLeft className="arrowLeft" />
+							</span>
+							<span>1</span>
+							<span>2</span>
+							<span className="activePagination">3</span>
+							<span>4</span>
+							<span>5</span>
+							<span>
+								<FaAngleRight className="arrowRight" />
+							</span>
+						</div>
 					</div>
 				</div>
 			</div>

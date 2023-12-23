@@ -91,6 +91,16 @@
 	background: #00ab55;
 }
 
+.allCategory span {
+	color: #00ab55;
+	font-size: 18px;
+	margin-right: 15px;
+	cursor: pointer;
+	transition: all .5s ease;
+}
+.allCategory span:hover {
+	color: #FFB240;
+}
 @media only screen and (max-width: 1024px) {
 	.shopContainer {
 		flex-direction: column;

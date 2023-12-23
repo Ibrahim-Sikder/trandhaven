@@ -61,7 +61,8 @@ const Shop = () => {
 		}
 	]
 	return (
-		<div className="wrapContainer">
+		<div className='mt-[80px]'>
+			<div className="wrapContainer">
 			<div>
 				<h3 className="text-2xl text-center md:text-left font-bold mb-8 shopTitle">Nature's Bounty, Delivered Fresh</h3>
 				<div className="shopCardsWrap">
@@ -91,7 +92,7 @@ const Shop = () => {
 													<div>
 														<div className="flex">
 															<h3 className="text-2xl font-bold">Orange Peel </h3>
-															<span className="text-[#5800fe] ml-2">500G</span>
+															<span className="text-[#00AB55] ml-2">500G</span>
 														</div>
 														<div className="flex items-center my-2">
 															<span>
@@ -146,7 +147,7 @@ const Shop = () => {
 															pariatur non iure aspernatur, voluptatem soluta excepturi
 															dolor.
 														</p>
-														<span>Availability: ৫৫৫ <small className='text-[#5800fe]'>in stock </small> </span>
+														<span>Availability: ৫৫৫ <small className='text-[#00AB55]'>in stock </small> </span>
 														<div className="increaseDecressBtnWrap">
 															<small onClick={decrementOrder}> <FaMinus />  </small>
 															<span>  { order}  </span>
@@ -198,6 +199,7 @@ const Shop = () => {
 			</div>
 			<Shops/>
 			<Category />
+		</div>
 		</div>
 	)
 }

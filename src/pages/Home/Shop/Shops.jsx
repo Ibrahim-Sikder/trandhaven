@@ -92,7 +92,7 @@ const Shops = () => {
 													<div>
 														<div className="flex">
 															<h3 className="text-2xl font-bold">Orange Peel </h3>
-															<span className="text-[#5800fe] ml-2">500G</span>
+															<span className="text-[#00AB55] ml-2">500G</span>
 														</div>
 														<div className="flex items-center my-2">
 															<span>
@@ -147,7 +147,7 @@ const Shops = () => {
 															pariatur non iure aspernatur, voluptatem soluta excepturi
 															dolor.
 														</p>
-														<span>Availability: ৫৫৫ <small className='text-[#5800fe]'>in stock </small> </span>
+														<span>Availability: ৫৫৫ <small className='text-[#00AB55]'>in stock </small> </span>
 														<div className="increaseDecressBtnWrap">
 															<small onClick={decrementOrder}> <FaMinus />  </small>
 															<span>  { order}  </span>

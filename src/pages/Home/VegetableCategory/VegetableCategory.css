@@ -30,9 +30,9 @@
 	visibility: hidden;
 }
 .vegetableImgWrap {
-	width: 150px;
+	width: 160px;
 	aspect-ratio: 1/1;
-	border-radius: 100%;
+	border-radius: 10px;
 	background: #00ab55;
 	display: grid;
 	place-content: center;
@@ -42,7 +42,6 @@
 .vegetableImgWrap:hover {
 	background-color: #ffb240;
 }
-
 
 .vegetableImgWrap:hover .vegetableIcon {
 	color: #00ab55 !important;

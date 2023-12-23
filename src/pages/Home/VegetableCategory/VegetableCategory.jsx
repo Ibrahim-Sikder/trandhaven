@@ -4,6 +4,7 @@ import icon2 from '../../../../public/assets/icon2.png'
 import icon3 from '../../../../public/assets/icon3.png'
 import icon4 from '../../../../public/assets/icon4.png'
 import icon5 from '../../../../public/assets/icon5.png'
+import { Link } from 'react-router-dom'
 const VegetableCategory = () => {
     const vegetableCategory = [
         {
@@ -39,19 +40,21 @@ const VegetableCategory = () => {
     ]
     return (
         <div className='wrapContainer'>
-            <div className='vegetabelCategoryWraps'>
+           <Link to='/shop'>
+           <div className='vegetabelCategoryWraps'>
           {
             vegetableCategory.map(category=>  <div key={category.id} className="vegetabelCategory">
             <div className="vegetableImgWrap">
             <img className='vegetableIcon' src={category.icon} alt="" />
             </div>
-              <div className='text-center'>
+              <div className='text-center mt-2'>
                   <h3 className='text-xl font-bold hover:text-[#00ab55] transition-all'>{category.title}</h3>
                   <small>33 items </small>
               </div>
           </div>)
           }
             </div>
+           </Link>
         </div>
     );
 };

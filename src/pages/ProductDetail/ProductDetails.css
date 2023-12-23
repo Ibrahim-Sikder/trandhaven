@@ -5,9 +5,30 @@
 	margin-top: 50px;
 }
 .productDetailsLeftSide {
-	width: 400px;
+	width: 600px;
 }
 .zoomImage {
 	width: 400px !important;
-	height: 500px !important;
+}
+.detailAddTopCartBtn {
+	width: 100%;
+	height: 35px;
+	background: #00ab55;
+	color: #fff;
+	margin-top: 10px;
+	border-radius: 3px;
+}
+.productDetailMiddleSide {
+	margin-left: 50px;
+}
+.remainingTime {
+	width: 50px;
+	aspect-ratio: 1/1;
+	display: grid;
+	place-content: center;
+	border: 1px solid #00ab55;
+	border-radius: 5px;
+	font-size: 14px;
+	margin-right: 15px;
+	text-align: center;
 }

@@ -37,11 +37,13 @@
 .search {
 	width: 800px;
 	height: 60px;
-	border: 1px solid #ddd;
+	border: 1px solid #00ab55;
 	display: flex;
 	padding: 10px;
 	border-radius: 5px;
 	overflow: hidden;
+	background: #fff;
+	color: #00ab55;
 }
 .search input {
 	width: 95%;
