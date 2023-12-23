@@ -181,7 +181,7 @@ const ProductDetails = () => {
 				<h3 className="text-4xl font-bold">Related Products: </h3>
 				<div>
 					<h3 className="text-xl my-3 "> 20 Reivew for Beef Club & T-Bone Per Product</h3>
-					<div className="flex items-center mt-5">
+					<div className="reivewStarWraps">
 						<div className="flex items-center mr-5">
 							<StarBorder className="reviewStar" />
 							<StarBorder className="reviewStar" />
@@ -192,7 +192,7 @@ const ProductDetails = () => {
 						<ProgressBar completed={95} maxCompleted={100} className="progressBar" />
 						<b className="ml-5">5</b>
 					</div>
-					<div className="flex items-center my-5">
+					<div className="reivewStarWraps">
 						<div className="flex items-center mr-5">
 							<StarBorder className="reviewStar" />
 							<StarBorder className="reviewStar" />
@@ -203,7 +203,7 @@ const ProductDetails = () => {
 						<ProgressBar completed={80} maxCompleted={100} className="progressBar" />
 						<b className="ml-5">5</b>
 					</div>
-					<div className="flex items-center my-5">
+					<div className="reivewStarWraps">
 						<div className="flex items-center mr-5">
 							<StarBorder className="reviewStar" />
 							<StarBorder className="reviewStar" />
@@ -214,7 +214,7 @@ const ProductDetails = () => {
 						<ProgressBar completed={50} maxCompleted={100} className="progressBar" />
 						<b className="ml-5">8</b>
 					</div>
-					<div className="flex items-center my-5">
+					<div className="reivewStarWraps">
 						<div className="flex items-center mr-5">
 							<StarBorder className="reviewStar" />
 							<StarBorder className="reviewStar" />
@@ -225,7 +225,7 @@ const ProductDetails = () => {
 						<ProgressBar completed={80} maxCompleted={100} className="progressBar" />
 						<b className="ml-5">4</b>
 					</div>
-					<div className="flex items-center my-5">
+					<div className="reivewStarWraps">
 						<div className="flex items-center mr-5">
 							<StarBorder className="reviewStar" />
 							<StarBorder className="reviewStar" />
@@ -302,8 +302,13 @@ const ProductDetails = () => {
            </div>
            <div className="giveReview">
            <label>Your Review </label>
-            <textarea> </textarea>
+            <textarea placeholder='Give your valuable review ' > </textarea>
            </div>
+           <div className="my-5 flex items-center ">
+            <input type="checkbox" />
+            <small className='ml-3 '>Save my name, email, and website in this browser for the next time I comment.</small>
+           </div>
+           <button className='detailAddTopCartBtn'>Submit</button>
           </form>
         </div>
 				<div className="mt-5">

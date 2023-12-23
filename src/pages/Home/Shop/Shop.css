@@ -189,6 +189,9 @@
 		grid-template-columns: repeat(5, 1fr);
 		place-items: center;
 	}
+	.shopCardsWrap {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 @media only screen and (max-width: 768px) {
