@@ -46,3 +46,43 @@
 .vegetableImgWrap:hover .vegetableIcon {
 	color: #00ab55 !important;
 }
+.categoryCardWrap {
+	margin-top: 60px;
+}
+.vegetableShopCategory {
+	background-image: url(../../../../public/assets/vegetable20.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 370px;
+	height: 450px;
+	position: relative;
+	border-radius: 10px;
+	color: white;
+}
+.vegetableShopCategory:nth-child(2) {
+	background-image: url(../../../../public/assets/vegetable18.jpg);
+}
+.vegetableShopCategory:nth-child(3) {
+	background-image: url(../../../../public/assets/vegetable19.jpg);
+}
+.vegetableShopCategory::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.5;
+	border-radius: 10px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+.categoryCardContent {
+	z-index: 2;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 10px;
+}
