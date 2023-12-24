@@ -44,6 +44,7 @@ const Shop = () => {
 			setOrder(order - 1)
 		}
 	}
+	
 
 	const shopData = [
 		{

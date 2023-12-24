@@ -1,0 +1,43 @@
+.checkoutLeftSide,
+.checkoutRightSide {
+	width: 50%;
+}
+.checkoutInputField {
+	width: 50% !important;
+	margin-right: 5px !important;
+}
+.checkoutInputField2 {
+	width: 100%;
+}
+.otherNote {
+	height: 200px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	width: 100%;
+}
+.yourOrder {
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	padding: 20px;
+	margin-left: 20px;
+	margin-top: 60px;
+}
+.yourOrder span {
+	margin-bottom: 10px;
+}
+.cashOnDelivery {
+	padding: 5px;
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+.sslComerz {
+	background: #255bab;
+	padding: 5px;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 14px;
+}
