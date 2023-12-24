@@ -197,7 +197,7 @@ const Shop = () => {
 					<button className="shopBtn">Shop Now </button>
 				</div>
 			</div>
-			<Shops/>
+			<Shops title="Nature's Bounty, Delivered Fresh" />
 			<Category />
 		</div>
 		</div>

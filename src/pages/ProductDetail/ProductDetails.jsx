@@ -58,14 +58,14 @@ const ProductDetails = () => {
 									largeImage: {
 										src: image,
 										width: 600,
-										height: 1000
+										height: 700
 									},
 									enlargedImageContainerClassName: 'enlargedImageContainer',
 									enlargedImageClassName: 'enlargedImage',
 									isHintEnabled: true,
 									shouldHideHintAfterFirstActivation: false,
 									enlargedImagePosition: 'over',
-									fadeDurationInMs: 100
+									fadeDurationInMs: 300
 								}}
 							/>
 						))}
@@ -312,7 +312,7 @@ const ProductDetails = () => {
           </form>
         </div>
 				<div className="mt-5">
-					<Shops />
+					<Shops title="Related Products "/>
 				</div>
 			</div>
 		</div>

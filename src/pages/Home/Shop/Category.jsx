@@ -3,6 +3,7 @@ import category2 from '../../../../public/assets/fruit13.jpg'
 import category3 from '../../../../public/assets/fruit14.png'
 import category4 from '../../../../public/assets/fruit4.jpg'
 import category5 from '../../../../public/assets/fruit16.png'
+import { Link } from 'react-router-dom'
 const Category = () => {
 	const categoryData = [
 		{
@@ -34,6 +35,7 @@ const Category = () => {
 	return (
 		<div className='mt-10'>
 			<h3 className='text-2xl text-center md:text-left font-bold mb-8 shopTitle'>Shop By Category </h3>
+			<Link to='/shop'>
 			<div className='categoryCards'>
 			{
 				categoryData.map(category=><div key={category._id} className="categoryCard">
@@ -44,6 +46,7 @@ const Category = () => {
 			</div>)
 			}
 			</div>
+			</Link>
 		</div>
 	)
 }

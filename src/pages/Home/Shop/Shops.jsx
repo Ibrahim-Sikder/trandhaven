@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 
 /* eslint-disable react/no-unescaped-entities */
 import './Shop.css'
@@ -15,7 +16,7 @@ import 'swiper/css/navigation'
 import { Pagination, Navigation } from 'swiper/modules'
 import { useState } from 'react'
 
-const Shops = () => {
+const Shops = ({title}) => {
 	const [ order, setOrder ] = useState(0)
 
 	const incrementOrder = () => {
@@ -64,7 +65,7 @@ const Shops = () => {
 	return (
 		<div className="wrapContainer">
 			<div>
-				<h3 className="text-2xl text-center md:text-left font-bold mb-8 shopTitle">Nature's Bounty, Delivered Fresh</h3>
+				<h3 className="text-2xl text-center md:text-left font-bold mb-8 shopTitle">{title}</h3>
 				<div className="shopCardsWrap">
 					{shopData.map((shop) => (
 						<div key={shop.id} className="shopCard">
