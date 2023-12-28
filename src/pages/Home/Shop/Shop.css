@@ -94,14 +94,7 @@
 .rightSideContent {
 	width: 550px;
 }
-.shopBtn {
-	background: #00ab55;
-	width: 100px;
-	height: 33px;
-	border-radius: 5px;
-	font-size: 18px;
-	color: #fff;
-}
+
 .shopTitle {
 	position: relative;
 	width: 100%;

@@ -88,6 +88,15 @@ body {
 	border-radius: 100%;
 }
 
+.shopBtn {
+	background: #00ab55;
+	width: 100px;
+	height: 33px;
+	border-radius: 5px;
+	font-size: 18px;
+	color: #fff;
+}
+
 @media only screen and (max-width: 1024px) {
 	.wrapContainer {
 		width: 100%;

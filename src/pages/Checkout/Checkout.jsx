@@ -1,3 +1,4 @@
+/* eslint-disable no-mixed-spaces-and-tabs */
 import './Checkout.css'
 import TextField from '@mui/material/TextField'
 import Checkbox from '@mui/material/Checkbox'
@@ -97,8 +98,8 @@ const Checkout = () => {
 							<span>Delivery Cost (Product Delivery Free)</span>
 						</div>
 						<div className="flex items-center justify-between ">
-							<span>Total </span>
-							<span>৳১০৯০</span>
+							<b>Total </b>
+							<b>৳১০৯০</b>
 						</div>
 					</div>
 					<div className="delivery">
@@ -107,15 +108,23 @@ const Checkout = () => {
                             <FormControlLabel value="start" control={<Radio />}labelPlacement="start" />
                             <small className='ml-2'>Cash on delivery</small>
                             </div>
-                            {/* <span>Pay with cash upon delivery.</span> */}
 						</div>
                         <div className="cashOnDelivery">
-							<div className="flex items-center">
+							<div className="">
                             <FormControlLabel value="start" control={<Radio />}labelPlacement="start" />
                             <small className='ml-2'>Pay Online(Credit/Debit Card/MobileBanking/NetBanking/bKash)</small>
                             </div>
-                            <small className='block'>Verified by </small>
+                          <div className="ml-5">
+						  <small className='block'>Verified by </small>
                             <span className='sslComerz'>SSLCOMMERZ</span>
+						  </div>
+						</div>
+						<div className="ml-5 mt-5 ">
+						<div className="flex items-center">
+						<input type="checkbox" />
+						<span className='ml-2 '> I have read and agree to the website terms and conditions *</span>
+						</div>
+						<button className='shopBtn placeOrderBtn'>Place Order </button>
 						</div>
 					</div>
 				</div>
