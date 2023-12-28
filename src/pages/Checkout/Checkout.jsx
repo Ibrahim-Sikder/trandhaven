@@ -9,6 +9,7 @@ import Select from '@mui/material/Select'
 import Radio from '@mui/material/Radio'
 import FormControlLabel from '@mui/material/FormControlLabel'
 const Checkout = () => {
+	
 	return (
 		<div className="wrapContainer">
 			<div className="checkoutWrap mt-5 flex justify-between flex-wrap ">
