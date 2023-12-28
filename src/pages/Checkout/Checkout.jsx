@@ -11,7 +11,7 @@ import FormControlLabel from '@mui/material/FormControlLabel'
 const Checkout = () => {
 	return (
 		<div className="wrapContainer">
-			<div className="checkoutWrap mt-5 flex justify-between ">
+			<div className="checkoutWrap mt-5 flex justify-between flex-wrap ">
 				<div className="checkoutLeftSide">
 					<h3 className="text-3xl font-bold">Billing Details </h3>
 					<div className="mt-5 flex items-center jsutify-between">
@@ -114,12 +114,12 @@ const Checkout = () => {
                             <FormControlLabel value="start" control={<Radio />}labelPlacement="start" />
                             <small className='ml-2'>Pay Online(Credit/Debit Card/MobileBanking/NetBanking/bKash)</small>
                             </div>
-                          <div className="ml-5">
+                          <div className="lg:ml-5">
 						  <small className='block'>Verified by </small>
                             <span className='sslComerz'>SSLCOMMERZ</span>
 						  </div>
 						</div>
-						<div className="ml-5 mt-5 ">
+						<div className=" lg:ml-5 mt-5 ">
 						<div className="flex items-center">
 						<input type="checkbox" />
 						<span className='ml-2 '> I have read and agree to the website terms and conditions *</span>
