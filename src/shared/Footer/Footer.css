@@ -7,6 +7,9 @@
 .trendHaven {
 	width: 400px;
 }
+.footer ul li {
+	margin-bottom: 15px;
+}
 
 @media only screen and (max-width: 1024px) {
 	.footer {
