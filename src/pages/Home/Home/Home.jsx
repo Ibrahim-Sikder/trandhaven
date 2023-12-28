@@ -8,7 +8,6 @@ const Home = () => {
         <div>
            <HeroSlider/>
            <VegetableCategory/>
-           {/* <About/> */}
            <Shop/>
           <div className="my-10">
           <Shops title="Popular Products of TrendHaven!"/>

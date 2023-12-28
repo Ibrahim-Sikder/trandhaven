@@ -178,7 +178,7 @@ const ProductDetails = () => {
 				<h3 className="text-4xl font-bold">Products Reivews: </h3>
 			</div>
 			<div className="relatedProduct">
-				<h3 className="text-4xl font-bold">Related Products: </h3>
+			
 				<div>
 					<h3 className="text-xl my-3 "> 20 Reivew for Beef Club & T-Bone Per Product</h3>
 					<div className="reivewStarWraps">

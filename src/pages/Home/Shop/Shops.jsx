@@ -7,7 +7,15 @@ import fruit2 from '../../../../public/assets/vegetable.jpg'
 import fruit3 from '../../../../public/assets/vegetable2.png'
 import fruit4 from '../../../../public/assets/vegetable3.png'
 import fruit5 from '../../../../public/assets/vegetable4.jpg'
-import fruit10 from '../../../../public/assets/vegetable5.png'
+import fruit6 from '../../../../public/assets/vegetable21.jpg'
+import fruit7 from '../../../../public/assets/vegetab22.jpg'
+import fruit8 from '../../../../public/assets/vegetabe23.jpg'
+import fruit9 from '../../../../public/assets/vegetable24.jpg'
+import fruit10 from '../../../../public/assets/vegetable25.jpg'
+import fruit11 from '../../../../public/assets/vegetable26.jpg'
+import fruit12 from '../../../../public/assets/vegetable27.jpg'
+import fruit13 from '../../../../public/assets/vegetable28.jpg'
+import fruit14 from '../../../../public/assets/vegetable5.png'
 import { FaEye, FaHeart,FaPlus ,FaMinus  } from 'react-icons/fa'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
@@ -36,28 +44,56 @@ const Shops = ({title}) => {
 			name: 'Apple',
 			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
 			price: 399,
-			img: fruit2
+			img: fruit6
 		},
 		{
 			id: 1,
 			name: 'Apple',
 			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
 			price: 399,
-			img: fruit3
+			img: fruit7
 		},
 		{
 			id: 1,
 			name: 'Apple',
 			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
 			price: 399,
-			img: fruit4
+			img: fruit8
 		},
 		{
 			id: 1,
 			name: 'Apple',
 			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
 			price: 399,
-			img: fruit5
+			img: fruit13
+		},
+		{
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: fruit14
+		},
+		{
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: fruit11
+		},
+		{
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: fruit12
+		},
+		{
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: fruit9
 		}
 	]
 	
@@ -65,7 +101,7 @@ const Shops = ({title}) => {
 	return (
 		<div className="wrapContainer">
 			<div>
-				<h3 className="text-2xl text-center md:text-left font-bold mb-8 shopTitle">{title}</h3>
+				<h3 className="text-4xl text-center md:text-left font-bold mb-8 shopTitle">{title}</h3>
 				<div className="shopCardsWrap">
 					{shopData.map((shop) => (
 						<div key={shop.id} className="shopCard">

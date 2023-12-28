@@ -2,7 +2,9 @@ import './Cart.css'
 import img from '../../../public/assets/fruit14.png'
 import { FaPlus, FaMinus, FaRegTrashAlt } from 'react-icons/fa'
 import { useState } from 'react'
-import TextField from '@mui/material/TextField';
+import TextField from '@mui/material/TextField'
+import Shops from '../Home/Shop/Shops'
+import { Link } from 'react-router-dom'
 
 const Cart = () => {
 	const [ order, setOrder ] = useState(0)
@@ -19,14 +21,13 @@ const Cart = () => {
 	}
 	return (
 		<div className="wrapContainer">
-            <div className="mt-5">
-                <span>Home </span>
-                <span> \ </span>
-                <span> Cart</span>
-                <h3 className="text-3xl font-bold my-5">Cart </h3>
-            </div>
+			<div className="mt-5">
+				<span>Home </span>
+				<span> \ </span>
+				<span> Cart</span>
+				<h3 className="text-3xl font-bold my-5">Cart </h3>
+			</div>
 			<div className="flex justify-between ">
-                
 				<table className="table cartTable">
 					<tr>
 						<th> Image</th>
@@ -61,7 +62,7 @@ const Cart = () => {
 								<FaRegTrashAlt className="trashIcon" />
 							</td>
 						</tr>
-                        <tr>
+						<tr>
 							<td>
 								<img className="w-[60px]" src={img} alt="fruit" />
 							</td>
@@ -102,14 +103,16 @@ const Cart = () => {
 						<b>Total </b>
 						<b>$509</b>
 					</div>
-					<button className="shopBtn checkoutBtn">Procced To Checkout </button>
+					<Link to='/checkout'><button className="shopBtn checkoutBtn">Procced To Checkout </button></Link>
 				</div>
-              
 			</div>
-            <div className='mt-5'>
-                <TextField id="outlined-basic" label="Coupon Apply " variant="outlined" />
-                </div>
-                <button className='shopBtn mt-3'>Apply </button>
+			<div className="mt-5">
+				<TextField id="outlined-basic" label="Coupon Apply " variant="outlined" />
+			</div>
+			<button className="shopBtn mt-3">Apply </button>
+			<div className="mt-10">
+			<Shops title='Recomded for you '/>
+			</div>
 		</div>
 	)
 }

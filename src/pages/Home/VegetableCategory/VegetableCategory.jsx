@@ -70,7 +70,7 @@ const VegetableCategory = () => {
 				</div>
 			</Link>
 
-			<div className="categoryCardWrap grid grid-cols-1 md:grid-cols-3">
+			<div className="categoryCardWrap grid grid-cols-1 gap-20 md:grid-cols-3">
 				{
                     shopCategory.map(shop=><div key={shop.id} className="vegetableShopCategory">
 					<div className="categoryCardContent flex items-center justify-between">

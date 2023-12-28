@@ -5,6 +5,9 @@ import Shop from "../pages/Shop/Shop";
 import ProductDetails from "../pages/ProductDetail/ProductDetails";
 import Cart from "../pages/Cart/Cart";
 import Checkout from "../pages/Checkout/Checkout";
+import MyAccount from "../pages/Account/MyAccount/MyAccount";
+import Profile from "../Layout/Profile";
+import Order from "../pages/Account/Order/Order";
 
 
 export const router = createBrowserRouter([
@@ -34,4 +37,18 @@ export const router = createBrowserRouter([
         },
       ]
     },
+    {
+      path: 'my-account',
+     element: <Profile/>,
+     children: [
+      {
+        path: '/my-account',
+        element: <MyAccount/>
+      },
+      {
+        path: 'order',
+        element: <Order/>
+      }
+     ]
+    }
   ]);
