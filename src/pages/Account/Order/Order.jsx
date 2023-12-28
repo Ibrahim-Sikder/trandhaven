@@ -5,7 +5,7 @@ const Order = () => {
  
 	
     return (
-        <div className="mt-10 ml-3">
+        <div className="mt-10 ">
           <table className="table orderTable ">
 					<tr>
 						<th> Order No </th>

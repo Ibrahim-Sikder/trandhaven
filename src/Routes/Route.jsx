@@ -9,6 +9,7 @@ import MyAccount from "../pages/Account/MyAccount/MyAccount";
 import Profile from "../Layout/Profile";
 import Order from "../pages/Account/Order/Order";
 import Cancel from "../pages/Account/Cancel/Cancel";
+import Address from "../pages/Account/Address/Address";
 
 
 export const router = createBrowserRouter([
@@ -53,6 +54,10 @@ export const router = createBrowserRouter([
       {
         path: 'cancel',
         element: <Cancel/>
+      },
+      {
+        path: 'address',
+        element: <Address/>
       },
      ]
     }
