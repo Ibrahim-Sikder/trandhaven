@@ -2,6 +2,7 @@ import './Header.css'
 import { Person, ShoppingCart, Search, ExpandMore} from '@mui/icons-material';
 import TopBar from './TopBar';
 import img from '../../../public/assets/vegetable.jpg'
+import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div className=''>
@@ -88,7 +89,7 @@ const Header = () => {
                     </div>
                     
                     </li>
-                    <li className='ShopDropDownMenu'>Shope <ExpandMore/> 
+                    <li className='ShopDropDownMenu'><Link to='/shop'>Shope</Link> <ExpandMore/> 
                     <div className="dropDownMenu">
                       <div>
                         <ul>
