@@ -7,7 +7,7 @@ const Profile = () => {
     return (
         <div>
              <Header/>
-           <div className="flex justify-between wrapContainer">
+           <div className="flex  wrapContainer">
             <aside>
                <div className="mt-10">
              <div className="orderItems">
@@ -16,7 +16,7 @@ const Profile = () => {
              </div>
              <div className="orderItems">
                 <HiOutlineShoppingCart  size={20}/>
-                <span className="ml-3">Order</span>
+                <span className="ml-3">My Order</span>
              </div>
              <div className="orderItems activeOrderItems">
                 <HiOutlineLocationMarker  size={20} />
@@ -24,11 +24,15 @@ const Profile = () => {
              </div>
              <div className="orderItems">
                 <HiOutlineUpload  size={20}/>
-                <span className="ml-3">Download</span>
+                <span className="ml-3">  My Wishlist</span>
              </div>
              <div className="orderItems">
                 <HiOutlineUser size={20}/>
-                <span className="ml-3">Account Details </span>
+                <span className="ml-3">My Reviews</span>
+             </div>
+             <div className="orderItems">
+                <HiOutlineUser size={20}/>
+                <span className="ml-3">My Returns & Cancellations</span>
              </div>
              <div className="orderItems">
                 <HiOutlineLogin size={20}/>
@@ -36,6 +40,11 @@ const Profile = () => {
              </div>
                </div>
             </aside>
+
+
+
+
+
             <Outlet/>
 
            </div>

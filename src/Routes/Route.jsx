@@ -8,6 +8,7 @@ import Checkout from "../pages/Checkout/Checkout";
 import MyAccount from "../pages/Account/MyAccount/MyAccount";
 import Profile from "../Layout/Profile";
 import Order from "../pages/Account/Order/Order";
+import Cancel from "../pages/Account/Cancel/Cancel";
 
 
 export const router = createBrowserRouter([
@@ -48,7 +49,11 @@ export const router = createBrowserRouter([
       {
         path: 'order',
         element: <Order/>
-      }
+      },
+      {
+        path: 'cancel',
+        element: <Cancel/>
+      },
      ]
     }
   ]);
