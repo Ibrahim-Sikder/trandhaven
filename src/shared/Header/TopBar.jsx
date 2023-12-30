@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Header.css'
 const TopBar = () => {
     return (
@@ -6,8 +7,7 @@ const TopBar = () => {
                     <span>Welcome to TrendHaven</span>
                     <div className='topbarRightSide'>
                         <span>Order Tracking</span>
-                        <span>My Wishlist</span>
-                        <span>Recent Viewed Products</span>
+                      <Link to='/wishlist'>  <span>My Wishlist</span></Link>
                     </div>
                 </div>
         </div>

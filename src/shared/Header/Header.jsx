@@ -19,13 +19,15 @@ const Header = () => {
                    
                   <div className="flex items-center">
                   <div className="onlinShopping">
-                        <Person className='personIcon'/>
+                       <Link to='/my-account'> <Person className='personIcon'/></Link>
                     </div>
                     <div className="cart">
-                       <div className="shoppingCart">
+                      <Link to='/cart'>
+                      <div className="shoppingCart">
                        <ShoppingCart className='shoopingCartIcon'/>
                        <h6 className="price">0</h6>
                        </div>
+                      </Link>
                         <div className='ml-2'>
                             <span>$00</span>
                             <p>Cart</p>

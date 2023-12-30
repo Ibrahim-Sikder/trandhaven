@@ -12,6 +12,7 @@ import './ProductDetails.css'
 import { FaMinus, FaPlus, FaUserAlt } from 'react-icons/fa'
 import Shops from '../Home/Shop/Shops'
 import ProgressBar from '@ramonak/react-progress-bar'
+import { Link } from 'react-router-dom'
 // ... (previous imports)
 
 // ... (previous imports)
@@ -138,6 +139,7 @@ const ProductDetails = () => {
 							</span>
 						</div>
 						<button className="detailAddTopCartBtn">Add To Cart </button>
+						<Link to='/cart'><button className="detailAddTopCartBtn">Buy Now </button></Link>
 					</div>
 				</div>
 			</div>
@@ -178,7 +180,6 @@ const ProductDetails = () => {
 				<h3 className="text-4xl font-bold">Products Reivews: </h3>
 			</div>
 			<div className="relatedProduct">
-			
 				<div>
 					<h3 className="text-xl my-3 "> 20 Reivew for Beef Club & T-Bone Per Product</h3>
 					<div className="reivewStarWraps">
@@ -254,16 +255,16 @@ const ProductDetails = () => {
 								</span>
 							</div>
 							<div>
-                <span>United States From</span>
-                <small className="text-[#C4C4C4]"> December 01, 2023 </small>
-              </div>
+								<span>United States From</span>
+								<small className="text-[#C4C4C4]"> December 01, 2023 </small>
+							</div>
 							<p>
 								Excellent source of beta-carotene, promoting eye health ! <br /> Good for snacking or
 								adding to salads and stir-fries.
 							</p>
 						</div>
 					</div>
-          <div className="commentWrap flex ">
+					<div className="commentWrap flex ">
 						<div className="reviewMan">
 							<FaUserAlt className="customerReviewIcon" />
 						</div>
@@ -279,9 +280,9 @@ const ProductDetails = () => {
 								</span>
 							</div>
 							<div>
-                <span>United States From</span>
-                <small className="text-[#C4C4C4]"> December 01, 2023 </small>
-              </div>
+								<span>United States From</span>
+								<small className="text-[#C4C4C4]"> December 01, 2023 </small>
+							</div>
 							<p>
 								Excellent source of beta-carotene, promoting eye health ! <br /> Good for snacking or
 								adding to salads and stir-fries.
@@ -289,30 +290,32 @@ const ProductDetails = () => {
 						</div>
 					</div>
 				</div>
-        <div className="addReview">
-          <h3 className="text-xl">Give Review</h3>
-          <form>
-           <div className="giveReview">
-           <label>Name </label>
-            <input type="text" placeholder='Name' />
-           </div>
-           <div className="giveReview">
-           <label>Email </label>
-            <input type="text" placeholder='Email' />
-           </div>
-           <div className="giveReview">
-           <label>Your Review </label>
-            <textarea placeholder='Give your valuable review ' > </textarea>
-           </div>
-           <div className="my-5 flex items-center ">
-            <input type="checkbox" />
-            <small className='ml-3 '>Save my name, email, and website in this browser for the next time I comment.</small>
-           </div>
-           <button className='detailAddTopCartBtn'>Submit</button>
-          </form>
-        </div>
+				<div className="addReview">
+					<h3 className="text-xl">Give Review</h3>
+					<form>
+						<div className="giveReview">
+							<label>Name </label>
+							<input type="text" placeholder="Name" />
+						</div>
+						<div className="giveReview">
+							<label>Email </label>
+							<input type="text" placeholder="Email" />
+						</div>
+						<div className="giveReview">
+							<label>Your Review </label>
+							<textarea placeholder="Give your valuable review "> </textarea>
+						</div>
+						<div className="my-5 flex items-center ">
+							<input type="checkbox" />
+							<small className="ml-3 ">
+								Save my name, email, and website in this browser for the next time I comment.
+							</small>
+						</div>
+						<button className="detailAddTopCartBtn">Submit</button>
+					</form>
+				</div>
 				<div className="mt-5">
-					<Shops title="Related Products "/>
+					<Shops title="Related Products " />
 				</div>
 			</div>
 		</div>

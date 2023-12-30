@@ -1,6 +1,6 @@
 .topBar {
 	background: #f4f6f8;
-	padding: 10px 0px;
+	padding: 5px 0px;
 	background-color: #00ab55;
 	color: #fff;
 }
@@ -10,7 +10,7 @@
 	color: #fff;
 }
 .topbarRightSide {
-	width: 400px;
+	width: 200px;
 }
 .topbarRightSide,
 .header,
@@ -29,10 +29,6 @@
 .headerWrap {
 	max-width: 1200px;
 	margin: 0 auto;
-}
-
-.header {
-	padding: 5px 0px;
 }
 .search {
 	width: 800px;

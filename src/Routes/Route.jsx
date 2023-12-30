@@ -10,6 +10,7 @@ import Profile from "../Layout/Profile";
 import Order from "../pages/Account/Order/Order";
 import Cancel from "../pages/Account/Cancel/Cancel";
 import Address from "../pages/Account/Address/Address";
+import WishList from "../pages/Wishlist/WishList";
 
 
 export const router = createBrowserRouter([
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
         {
           path: '/checkout',
           element: <Checkout/>
+        },
+        {
+          path: '/wishlist',
+          element: <WishList/>
         },
       ]
     },

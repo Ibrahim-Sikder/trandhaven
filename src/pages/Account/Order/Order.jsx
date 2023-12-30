@@ -6,7 +6,7 @@ const Order = () => {
 	
     return (
         <div className="mt-10 ">
-          <table className="table orderTable ">
+          <table className="table orderTable overflow-x-auto">
 					<tr>
 						<th> Order No </th>
 						<th> Date  </th>
