@@ -22,8 +22,10 @@
 	justify-content: space-between;
 	align-items: center;
 }
-.nav {
+.nav,
+.activeNav {
 	padding: 15px 0;
+	position: relative;
 }
 .topBarWrap,
 .headerWrap {
@@ -100,9 +102,7 @@
 .nav li:hover {
 	cursor: pointer;
 }
-.nav {
-	position: relative;
-}
+
 .dropDownMenu {
 	position: absolute;
 	background: #fff;
@@ -110,7 +110,6 @@
 	z-index: 9;
 	top: 75px;
 	left: 0px;
-
 	opacity: 0;
 	visibility: hidden;
 	transform: scaleY(0);
@@ -133,10 +132,36 @@
 	transform: scaleY(1);
 }
 
+.productViewedDropDownMenu {
+	position: absolute;
+	top: 44px;
+	z-index: 3;
+	background: #ddd;
+	padding: 20px;
+	left: -800px;
+	width: 1000px;
+	opacity: 0;
+	visibility: hidden;
+	transform: scaleY(0);
+	transform-origin: top center;
+	transition: all .5s ease-in-out;
+}
+.recentlyHover:hover .productViewedDropDownMenu {
+	opacity: 1;
+	visibility: visible;
+	transform: scaleY(1);
+}
+.bar {
+	display: none;
+}
+
 @media only screen and (max-width: 1024px) {
 	.topBarWrap,
 	.headerWrap {
 		max-width: 100%;
+	}
+	.header {
+		padding: 10px 0;
 	}
 	.topBarWrap {
 		padding: 20px;
@@ -144,6 +169,76 @@
 	.headerWrap {
 		padding: 0 20px;
 	}
+	.topBar,
+	.search,
+	.onlinShopping,
+	.cart,
+	.recentlyHover {
+		display: none;
+	}
+	.bar {
+		display: block;
+	}
+
+	.bar,
+	.activeMenuBar {
+		cursor: pointer;
+		transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
+		top: 10px;
+		left: 5px;
+		z-index: 99999999999999;
+		position: relative;
+	}
+
+	.bar span {
+		width: 30px;
+		height: 2px;
+		background: #fff;
+		margin-bottom: 6px;
+		display: block;
+		transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
+	}
+
+	.nav,
+	.activeNav {
+		background: red;
+		display: block;
+		position: absolute;
+		left: -350px;
+		z-index: 999999;
+		width: 350px;
+		top: 0;
+		overflow-y: scroll;
+		height: 100%;
+	}
+	.activeNav {
+		left: 0px;
+	}
+	.dropDownMenu {
+		display: block;
+		width: auto;
+	}
+
+	/* .bar1 {
+		transform: rotate(-45deg);
+		position: absolute;
+		top: -2px;
+		left: -12px;
+		transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
+	  }
+	  .bar2 {
+		display: none;
+		position: absolute !important;
+		display: none !important;
+		transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
+	  }
+	  .bar3 {
+		transform: rotate(45deg);
+		position: absolute;
+		top: -2px;
+		right: -18px;
+		transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
+	  } */
 }
 
 @media only screen and (max-width: 768px) {

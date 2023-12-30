@@ -2,8 +2,16 @@ import './Header.css'
 import { Person, ShoppingCart, Search, ExpandMore} from '@mui/icons-material';
 import TopBar from './TopBar';
 import img from '../../../public/assets/vegetable.jpg'
+import img2 from '../../../public/assets/vegetab22.jpg'
+import img3 from '../../../public/assets/vegetable26.jpg'
+import img4 from '../../../public/assets/fruit13.jpg'
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 const Header = () => {
+  const [toggleMenu, setToggleMenu ] = useState(true);
+  const handleToggle = ()=>{
+    setToggleMenu((toggleMenu)=>!toggleMenu)
+  }
     return (
         <div className=''>
             <div>
@@ -11,6 +19,15 @@ const Header = () => {
                <div className="navBarWrap">
                <div className="headerWrap">
                 <div className="header">
+
+                  {/* mobile toggle menu  */}
+                 <div onClick={handleToggle}>
+                 <div  className={toggleMenu? `bar` : `activeMenuBar`}>
+                    <span className='bar1'></span>
+                    <span className='bar2'></span>
+                    <span className='bar3'></span>
+                  </div>
+                 </div>
                    <Link to='/'> <h3 className="text-3xl font-bold">Trendhaven</h3></Link>
                     <div className='search'>
                         <input type="text" placeholder='Search here...' autoComplete='off'/>
@@ -36,7 +53,7 @@ const Header = () => {
                   </div>
                 </div>
                 <div className="flex items-center justify-between">
-                <ul className='nav'>
+                <ul className={toggleMenu ? `nav` : `nav`}>
                     <li className='ShopDropDownMenu'>Home <ExpandMore/> 
                     <div className="dropDownMenu">
                       <div>
@@ -179,9 +196,17 @@ const Header = () => {
                     <li>Blog <ExpandMore/> </li>
                     <li>Flash Salse <ExpandMore/> </li>
                 </ul>
-                <div className='flex items-center'>
-                    <h3 className=" font-bold">Recently Viewed Products </h3>
+                <div className='flex items-center relative recentlyHover cursor-pointer '>
+                    <p className=" ">Recently Viewed Products </p>
                     <ExpandMore/> 
+                    <div className="productViewedDropDownMenu">
+                   <div className="flex items-center justify-between">
+                   <img className='w-[200px] h-[200px]' src={img2} alt="" />
+                   <img className='w-[200px] h-[200px]' src={img3} alt="" />
+                   <img className='w-[200px] h-[200px]' src={img4} alt="" />
+                   <img className='w-[200px] h-[200px]' src={img} alt="" />
+                   </div>
+                    </div>
                 </div>
                 </div>
                 </div>
