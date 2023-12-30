@@ -11,7 +11,7 @@ const Header = () => {
                <div className="navBarWrap">
                <div className="headerWrap">
                 <div className="header">
-                    <h3 className="text-3xl font-bold">Trendhaven</h3>
+                   <Link to='/'> <h3 className="text-3xl font-bold">Trendhaven</h3></Link>
                     <div className='search'>
                         <input type="text" placeholder='Search here...' autoComplete='off'/>
                         <button><Search className='searchIcon'/> </button>

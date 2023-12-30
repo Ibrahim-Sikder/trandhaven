@@ -1,4 +1,4 @@
-import { Link, Outlet } from 'react-router-dom'
+import {  NavLink, Outlet } from 'react-router-dom'
 import Header from '../shared/Header/Header'
 import Footer from '../shared/Footer/Footer'
 import {
@@ -17,25 +17,25 @@ const Profile = () => {
 			<div className="profileWrap  wrapContainer">
 				<aside className="sidebar">
 					<div className="sidebarWrap">
-						<Link to="/my-account">
+						<NavLink to="/my-account">
 							<div className="orderItems">
 								<HiOutlineHome className="" size={20} />
 								<span className="ml-3">My Account </span>
 							</div>
-						</Link>
+						</NavLink>
 
-						<Link to="/my-account/order">
+						<NavLink to="/my-account/order">
 							<div className="orderItems">
 								<HiOutlineShoppingCart size={20} />
 								<span className="ml-3">My Order</span>
 							</div>
-						</Link>
-						<Link to="/my-account/address">
-							<div className="orderItems activeOrderItems">
+						</NavLink>
+						<NavLink to="/my-account/address" >
+							<div className="orderItems ">
 								<HiOutlineLocationMarker size={20} />
 								<span className="ml-3">Address </span>
 							</div>
-						</Link>
+						</NavLink>
 						<div className="orderItems">
 							<HiOutlineUpload size={20} />
 							<span className="ml-3"> My Wishlist</span>
@@ -44,12 +44,12 @@ const Profile = () => {
 							<HiOutlineUser size={20} />
 							<span className="ml-3">My Reviews</span>
 						</div>
-						<Link to="/my-account/cancel">
+						<NavLink to="/my-account/cancel"> 
 							<div className="orderItems">
 								<HiOutlineUser size={20} />
 								<span className="ml-3">My Returns & Cancellations</span>
 							</div>
-						</Link>
+						</NavLink>
 						<div className="orderItems">
 							<HiOutlineLogin size={20} />
 							<span className="ml-3">Log Out </span>

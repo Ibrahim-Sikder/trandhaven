@@ -11,17 +11,23 @@
 	background: #00ab55;
 	color: #fff;
 }
-.activeOrderItems {
-	background: #00ab55;
-	color: #fff;
-	border: none;
-}
+
 .profileWrap {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	margin-top: 30px;
 }
+.active {
+    background: #00ab55 !important;
+    z-index: 99 !important;
+    color: #fff !important;
+    position: relative;
+    width: 230px;
+    height: 50px;
+    display: block;
+}
+
 @media only screen and (max-width: 1024px) {
 	.sidebarWrap {
 		flex-wrap: wrap;

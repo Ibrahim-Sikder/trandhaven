@@ -19,3 +19,10 @@
 	background: #00ab55;
 	color: #fff;
 }
+
+@media only screen and (max-width: 500px) {
+	.trackingOrder,
+	.orderTrackingInput {
+		width: 100%;
+	}
+}
