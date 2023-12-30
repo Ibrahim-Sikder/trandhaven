@@ -6,9 +6,7 @@ const Main = () => {
     return (
         <div>
             <Header/>
-           <div className="wrapContainer">
-           <Outlet/>
-           </div>
+            <Outlet/>
             <Footer/>
         </div>
     );

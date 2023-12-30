@@ -53,7 +53,7 @@ const VegetableCategory = () => {
 	return (
 		<div className="wrapContainer">
 			<Link to="/shop">
-				<div className="vegetabelCategoryWraps">
+				<div className="grid gap-10 grid-cols-1 md:grid-cols-4 lg:grid-cols-5 mt-24 place-content-center ">
 					{vegetableCategory.map((category) => (
 						<div key={category.id} className="vegetabelCategory">
 							<div className="vegetableImgWrap">
@@ -70,7 +70,7 @@ const VegetableCategory = () => {
 				</div>
 			</Link>
 
-			<div className="categoryCardWrap grid grid-cols-1 gap-20 md:grid-cols-3">
+			<div className="categoryCardWrap grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 place-content-center ">
 				{
                     shopCategory.map(shop=><div key={shop.id} className="vegetableShopCategory">
 					<div className="categoryCardContent flex items-center justify-between">
