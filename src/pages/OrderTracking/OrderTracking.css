@@ -1,0 +1,21 @@
+.trackingOrder {
+	width: 600px;
+	margin: 0 auto;
+}
+.orderTrackingInput {
+	width: 500px !important;
+	margin-bottom: 20px !important;
+	margin-bottom: 20px !important;
+}
+.trackBtn {
+	width: 200px;
+	height: 45px;
+	background: transparent;
+	color: black;
+	border: 1px solid #00ab55;
+	transition: all .5s ease;
+}
+.trackBtn:hover {
+	background: #00ab55;
+	color: #fff;
+}

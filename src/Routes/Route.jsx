@@ -11,6 +11,7 @@ import Order from "../pages/Account/Order/Order";
 import Cancel from "../pages/Account/Cancel/Cancel";
 import Address from "../pages/Account/Address/Address";
 import WishList from "../pages/Wishlist/WishList";
+import OrderTracking from "../pages/OrderTracking/OrderTracking";
 
 
 export const router = createBrowserRouter([
@@ -41,6 +42,10 @@ export const router = createBrowserRouter([
         {
           path: '/wishlist',
           element: <WishList/>
+        },
+        {
+          path: '/tracking-order',
+          element: <OrderTracking/>
         },
       ]
     },
