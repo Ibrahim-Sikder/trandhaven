@@ -12,6 +12,24 @@ const Header = () => {
   const handleToggle = ()=>{
     setToggleMenu((toggleMenu)=>!toggleMenu)
   }
+
+
+  const homeDropDownclick = () => {
+    const homeDropDownMenu = document.getElementById('homeDropDownMenu');
+    homeDropDownMenu.classList.toggle('homeDropDownMenu');
+    
+  };
+  const shopDropDownClick = () => {
+    const shopDropDownMenu = document.getElementById('shopDropDownMenu');
+    shopDropDownMenu.classList.toggle('shopDropDownMenu');
+    
+  };
+  const vegetableDropDownClick = () => {
+    const shopDropDownMenu = document.getElementById('vegetableDropDownMenu');
+    shopDropDownMenu.classList.toggle('vegetableDropDownMenu');
+    
+  };
+
     return (
         <div className=''>
             <div>
@@ -22,10 +40,10 @@ const Header = () => {
 
                   {/* mobile toggle menu  */}
                  <div onClick={handleToggle}>
-                 <div  className={toggleMenu? `bar` : `activeMenuBar`}>
-                    <span className='bar1'></span>
-                    <span className='bar2'></span>
-                    <span className='bar3'></span>
+                 <div  className={toggleMenu? `bar` : ` bar activeMenuBar`}>
+                    <span className={toggleMenu ? ` ` : `bar1`}></span>
+                    <span className={toggleMenu ? ` ` : `bar2`}></span>
+                    <span className={toggleMenu ? ` ` : `bar3`}></span>
                   </div>
                  </div>
                    <Link to='/'> <h3 className="text-3xl font-bold">Trendhaven</h3></Link>
@@ -53,9 +71,9 @@ const Header = () => {
                   </div>
                 </div>
                 <div className="flex items-center justify-between">
-                <ul className={toggleMenu ? `nav` : `nav`}>
-                    <li className='ShopDropDownMenu'>Home <ExpandMore/> 
-                    <div className="dropDownMenu">
+                <ul className={toggleMenu ? `nav` : `activeNav`}>
+                    <li onClick={homeDropDownclick} id='dropDownMenu' className='ShopDropDownMenu'>Home <ExpandMore/> 
+                    <div id="homeDropDownMenu"  className="dropDownMenu">
                       <div>
                         <ul>
                         <h3 className="text-xl font-bold">Shop Category</h3>
@@ -108,8 +126,8 @@ const Header = () => {
                     </div>
                     
                     </li>
-                    <li className='ShopDropDownMenu'><Link to='/shop'>Shope</Link> <ExpandMore/> 
-                    <div className="dropDownMenu">
+                    <li onClick={shopDropDownClick} className='ShopDropDownMenu'><Link to='/shop'>Shope</Link> <ExpandMore/> 
+                    <div id='shopDropDownMenu' className="dropDownMenu">
                       <div>
                         <ul>
                         <h3 className="text-xl font-bold">Shop Category</h3>
@@ -162,8 +180,8 @@ const Header = () => {
                     </div>
                     </li>
                     <li>Pages <ExpandMore/> </li>
-                    <li className='ShopDropDownMenu'>Vegetable <ExpandMore/> 
-                    <div className="dropDownMenu">
+                    <li onClick={vegetableDropDownClick} className='ShopDropDownMenu'>Vegetable <ExpandMore/> 
+                    <div id='vegetableDropDownMenu' className="dropDownMenu">
                       <div>
                         <ul>
                         <h3 className="text-xl font-bold">Top Category</h3>

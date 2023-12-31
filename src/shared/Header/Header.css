@@ -126,11 +126,6 @@
 	margin-bottom: 5px;
 	font-size: 15px;
 }
-.ShopDropDownMenu:hover .dropDownMenu {
-	opacity: 1;
-	visibility: visible;
-	transform: scaleY(1);
-}
 
 .productViewedDropDownMenu {
 	position: absolute;
@@ -145,6 +140,11 @@
 	transform: scaleY(0);
 	transform-origin: top center;
 	transition: all .5s ease-in-out;
+}
+.ShopDropDownMenu:hover .dropDownMenu {
+	opacity: 1;
+	visibility: visible;
+	transform: scaleY(1);
 }
 .recentlyHover:hover .productViewedDropDownMenu {
 	opacity: 1;
@@ -184,7 +184,7 @@
 	.activeMenuBar {
 		cursor: pointer;
 		transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
-		top: 10px;
+		top: 5px;
 		left: 5px;
 		z-index: 99999999999999;
 		position: relative;
@@ -201,49 +201,77 @@
 
 	.nav,
 	.activeNav {
-		background: red;
+		background: #00ab55;
 		display: block;
 		position: absolute;
-		left: -350px;
+		left: -360px;
 		z-index: 999999;
-		width: 350px;
+		width: 320px;
 		top: 0;
 		overflow-y: scroll;
 		height: 100%;
+		transition: all .5s cubic-bezier(0.47, 0.45, 0.66, 0.65);
+	}
+	.nav li,
+	.activeNav li {
+		cursor: pointer;
 	}
 	.activeNav {
 		left: 0px;
+		padding: 20px;
+		padding-top: 59px;
+	}
+	.activeNav li {
+		margin-bottom: 15px;
 	}
 	.dropDownMenu {
 		display: block;
-		width: auto;
+		width: 100%;
+		margin-top: 10px;
 	}
 
-	/* .bar1 {
+	.bar1 {
 		transform: rotate(-45deg);
 		position: absolute;
 		top: -2px;
 		left: -12px;
 		transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
-	  }
-	  .bar2 {
+	}
+	.bar2 {
 		display: none;
 		position: absolute !important;
 		display: none !important;
 		transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
-	  }
-	  .bar3 {
+	}
+	.bar3 {
 		transform: rotate(45deg);
 		position: absolute;
 		top: -2px;
 		right: -18px;
 		transition: all 0.5s linear(-0.47 -53.68%, 1 100%);
-	  } */
-}
+	}
 
-@media only screen and (max-width: 768px) {
-	.headerWrap,
-	.topBar {
-		display: none;
+	.ShopDropDownMenu:hover .dropDownMenu {
+		opacity: 0;
+		visibility: none;
+		transform: scaleY(0);
+	}
+	.recentlyHover:hover .productViewedDropDownMenu {
+		opacity: 0;
+		visibility: none;
+		transform: scaleY(0);
+	}
+	.homeDropDownMenu,
+	.shopDropDownMenu,
+	.vegetableDropDownMenu {
+		opacity: 1 !important;
+		visibility: visible !important;
+		transform: scaleY(1) !important;
+	}
+	.shopDropDownMenu {
+		top: 112px;
+	}
+	.vegetableDropDownMenu {
+		top: 200px;
 	}
 }
