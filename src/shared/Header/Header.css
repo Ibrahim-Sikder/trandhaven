@@ -48,13 +48,22 @@
 	height: 100%;
 	background: transparent;
 }
+.searchIconWrap {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background: #00ab55;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	justify-content: center;
+}
 .search input:focus {
 	outline: none;
 }
 .search button {
-	border-left: 1px solid #ddd;
 	font-size: 30px;
-	padding-left: 10px;
 }
 .searchIcon {
 	font-size: 33px !important;
@@ -154,6 +163,9 @@
 .bar {
 	display: none;
 }
+.hideBar {
+	display: none;
+}
 
 @media only screen and (max-width: 1024px) {
 	.topBarWrap,
@@ -176,7 +188,8 @@
 	.recentlyHover {
 		display: none;
 	}
-	.bar {
+	.bar,
+	.hideBar {
 		display: block;
 	}
 

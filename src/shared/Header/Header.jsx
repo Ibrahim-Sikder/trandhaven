@@ -39,7 +39,7 @@ const Header = () => {
                 <div className="header">
 
                   {/* mobile toggle menu  */}
-                 <div onClick={handleToggle}>
+                 <div className='hideBar' onClick={handleToggle}>
                  <div  className={toggleMenu? `bar` : ` bar activeMenuBar`}>
                     <span className={toggleMenu ? ` ` : `bar1`}></span>
                     <span className={toggleMenu ? ` ` : `bar2`}></span>
@@ -49,7 +49,7 @@ const Header = () => {
                    <Link to='/'> <h3 className="text-3xl font-bold">Trendhaven</h3></Link>
                     <div className='search'>
                         <input type="text" placeholder='Search here...' autoComplete='off'/>
-                        <button><Search className='searchIcon'/> </button>
+                        <button className='searchIconWrap'><Search className='searchIcon'/> </button>
                     </div>
                    
                   <div className="flex items-center">
