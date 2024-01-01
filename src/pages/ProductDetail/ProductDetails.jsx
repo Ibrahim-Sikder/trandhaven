@@ -46,31 +46,36 @@ const ProductDetails = () => {
 		<div className="wrapContainer">
 			<div className="productDetailsContainer">
 				<div className="productDetailsLeftSide">
-					<Slider {...mainImageSettings}>
-						{carouselImages.map((image, index) => (
-							<ReactImageMagnify
-								key={index}
-								{...{
-									smallImage: {
-										alt: 'vegetable',
-										isFluidWidth: true,
-										src: image
-									},
-									largeImage: {
-										src: image,
-										width: 600,
-										height: 700
-									},
-									enlargedImageContainerClassName: 'enlargedImageContainer',
-									enlargedImageClassName: 'enlargedImage',
-									isHintEnabled: true,
-									shouldHideHintAfterFirstActivation: false,
-									enlargedImagePosition: 'over',
-									fadeDurationInMs: 300
-								}}
-							/>
-						))}
-					</Slider>
+				<Slider
+            arrows
+            dots={false}
+            infinite
+            speed={500}
+            slidesToShow={1}
+            slidesToScroll={1}
+          >
+            {carouselImages.map((image, index) => (
+              <ReactImageMagnify
+                key={index}
+                smallImage={{
+                  alt: 'vegetable',
+                  isFluidWidth: true,
+                  src: image,
+                }}
+                largeImage={{
+                  src: image,
+                  width: 800,
+                  height: 1800,
+                }}
+                enlargedImageContainerClassName="enlargedImageContainer"
+                enlargedImageClassName="enlargedImage"
+                isHintEnabled
+                shouldHideHintAfterFirstActivation={false}
+                enlargedImagePosition="over"
+                fadeDurationInMs={300}
+              />
+            ))}
+          </Slider>
 				</div>
 				<div className="productDetailMiddleSide ">
 					<div className="mb-5">

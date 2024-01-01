@@ -8,8 +8,29 @@
 	width: 600px;
 }
 .zoomImage {
-	width: 400px !important;
+	width: 600px !important;
 }
+
+/* Add these styles to ProductDetails.css or your custom styles file */
+.productDetailsContainer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.productDetailsLeftSide {
+	width: 600px;
+}
+
+
+
+.zoomedImage {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+/* Add other styles as needed */
 
 .detailAddTopCartBtn {
 	width: 300px;
@@ -115,11 +136,11 @@
 @media only screen and (max-width: 500px) {
 	.productDetailsLeftSide {
 		width: 100%;
-		
 	}
 	.productDetailMiddleSide {
 		margin-left: 0px;
-	}.customerComent {
+	}
+	.customerComent {
 		flex-direction: column;
 		margin-top: 30px;
 	}

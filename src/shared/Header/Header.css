@@ -48,17 +48,7 @@
 	height: 100%;
 	background: transparent;
 }
-.searchIconWrap {
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	background: #00ab55;
-	border-radius: 100%;
-	display: flex;
-	align-items: center;
-	color: #fff;
-	justify-content: center;
-}
+
 .search input:focus {
 	outline: none;
 }

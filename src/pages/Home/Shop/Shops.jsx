@@ -16,7 +16,7 @@ import fruit11 from '../../../../public/assets/vegetable26.jpg'
 import fruit12 from '../../../../public/assets/vegetable27.jpg'
 import fruit13 from '../../../../public/assets/vegetable28.jpg'
 import fruit14 from '../../../../public/assets/vegetable5.png'
-import { FaEye, FaHeart,FaPlus ,FaMinus  } from 'react-icons/fa'
+import { FaEye, FaHeart,FaPlus ,FaMinus,FaShoppingCart   } from 'react-icons/fa'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -212,7 +212,7 @@ const Shops = ({title}) => {
 									BDT <b>{shop.price}৳</b>
 								</span>
 
-								<button className="addToCardBtn">Add to cart</button>
+								<button className="addToCardBtn flex items-center justify-center "> <FaShoppingCart className='mr-2' />  <span>Add to cart</span></button>
 							</div>
 						</div>
 					))}

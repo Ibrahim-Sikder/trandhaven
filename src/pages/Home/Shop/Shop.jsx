@@ -8,7 +8,7 @@ import fruit5 from '../../../../public/assets/fruit5.jpg'
 import fruit10 from '../../../../public/assets/shop.png'
 import Shops from './Shops'
 import Category from './Category'
-import { FaEye, FaHeart,FaPlus ,FaMinus  } from 'react-icons/fa'
+import { FaEye, FaHeart,FaPlus ,FaMinus, FaShoppingCart  } from 'react-icons/fa'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -175,7 +175,7 @@ const Shop = () => {
 									BDT <b>{shop.price}৳</b>
 								</span>
 
-								<button className="addToCardBtn">Add to cart</button>
+								<button className="addToCardBtn flex items-center justify-center "> <FaShoppingCart className='mr-2' />  <span>Add to cart</span></button>
 							</div>
 						</div>
 					))}
