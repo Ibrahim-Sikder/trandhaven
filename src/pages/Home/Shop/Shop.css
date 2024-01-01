@@ -178,6 +178,59 @@
 	top: 75px;
 	z-index: 2;
 }
+.freshVegetableLeft {
+	width: 45%;
+}
+.freshVegetableLeft img {
+	width: 800opx;
+}
+.freshVegetableCard {
+	width: 350px;
+	padding: 25px;
+	border: 1px solid red;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+}
+.freshVegetableCard button {
+	border: 1px solid #ddd;
+	padding: 8px;
+	font-size: 12px;
+	border-radius: 20px;
+	display: block;
+}
+.percent {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background: red;
+	color: #fff;
+	display: grid;
+	place-items: center;
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+}
+.featureFress {
+	border: 1px solid black;
+	position: absolute;
+	border-radius: 14px;
+	font-size: 14px;
+	top: 0;
+	right: 16px;
+	width: 66px;
+	text-align: center;
+}
+.hideApple {
+	display: none;
+}
+.freshImgWrap:hover .hideApple {
+	display: block;
+}
+.freshImgWrap:hover .showApple {
+	display: none;
+}
+
 @media only screen and (max-width: 1024px) {
 	.categoryCards {
 		display: grid;
