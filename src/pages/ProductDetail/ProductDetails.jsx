@@ -20,6 +20,7 @@ import { Link } from 'react-router-dom'
 const ProductDetails = () => {
 	const [ carouselImages ] = useState([ img1, img2, img3 ])
 
+	// eslint-disable-next-line no-unused-vars
 	const mainImageSettings = {
 		arrows: true,
 		dots: false,

@@ -15,7 +15,7 @@ const HeroSlider = () => {
         className="heroSlider"
     play={true}
     mobileTouch={true}
-    interval={3000}
+    interval={300000000000}
     animation="foldOutAnimation"
   organicArrows={true}
   bullets={true} 

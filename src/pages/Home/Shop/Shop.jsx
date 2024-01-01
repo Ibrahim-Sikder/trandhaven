@@ -64,7 +64,7 @@ const Shop = () => {
 		<div className='mt-[80px]'>
 			<div className="wrapContainer">
 			<div>
-				<h3 className="text-2xl text-center md:text-left font-bold mb-8 shopTitle">Nature's Bounty, Delivered Fresh</h3>
+				<h3 className="text-4xl text-center md:text-left font-bold mb-8 shopTitle">Nature's Bounty, Delivered Fresh</h3>
 				<div className="shopCardsWrap">
 					{shopData.map((shop) => (
 						<div key={shop.id} className="shopCard">

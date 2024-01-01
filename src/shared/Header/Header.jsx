@@ -48,7 +48,7 @@ const Header = () => {
                  </div>
                    <Link to='/'> <h3 className="text-3xl font-bold">Trendhaven</h3></Link>
                     <div className='search'>
-                        <input type="text" placeholder='Search here...' autoComplete='off'/>
+                        <input type="text" placeholder='Search in Trendhaven' autoComplete='off'/>
                         <button className='searchIconWrap'><Search className='searchIcon'/> </button>
                     </div>
                    

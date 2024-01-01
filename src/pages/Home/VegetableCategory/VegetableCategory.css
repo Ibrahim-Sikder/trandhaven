@@ -4,6 +4,7 @@
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	margin-top: 80px;
 }
 .vegetabelCategory::after {
 	content: '';
@@ -24,17 +25,8 @@
 	visibility: hidden;
 }
 .vegetableImgWrap {
-	width: 160px;
-	aspect-ratio: 1/1;
-	border-radius: 10px;
-	background: #00ab55;
-	display: grid;
-	place-content: center;
 	transition: all .5s cubic-bezier(0.42, 0.43, 0.67, 0.7);
 	cursor: pointer;
-}
-.vegetableImgWrap:hover {
-	background-color: #ffb240;
 }
 
 .vegetableImgWrap:hover .vegetableIcon {
