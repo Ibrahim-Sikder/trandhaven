@@ -267,6 +267,14 @@
 	.leftSide {
 		width: 350px;
 	}
+	.fresVegetableCategory {
+		display: block;
+	}
+	
+	.freshVegetableRight,
+	.freshVegetableLeft {
+		width: 100%;
+	}
 }
 @media only screen and (max-width: 500px) {
 	.categoryCards,

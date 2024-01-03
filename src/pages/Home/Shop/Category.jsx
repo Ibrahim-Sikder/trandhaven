@@ -78,7 +78,7 @@ const Category = () => {
 		<div className='mt-10'>
 			<h3 className='text-4xl text-center md:text-left font-bold mb-8 shopTitle'>Shop By Category </h3>
 			<Link to='/shop'>
-			<div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-10'>
+			<div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-10 place-content-center place-items-center '>
 			{
 				categoryData.map(category=><div key={category._id} className="categoryCard">
 				<div className="categoryImg">
