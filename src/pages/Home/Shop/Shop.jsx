@@ -1,15 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import './Shop.css'
-import { HiStar } from 'react-icons/hi'
 import { StarBorder } from '@mui/icons-material'
 import fruit2 from '../../../../public/assets/fruit2.jpg'
 import fruit3 from '../../../../public/assets/fruit3.jpg'
 import fruit4 from '../../../../public/assets/fruit4.jpg'
 import fruit5 from '../../../../public/assets/fruit5.jpg'
 import fruit10 from '../../../../public/assets/shop.png'
-import fresh from '../../../../public/assets/fresh.jpg'
-import apple from '../../../../public/assets/apple.jpg'
-import apple2 from '../../../../public/assets/apple2.jpg'
 import Shops from './Shops'
 import Category from './Category'
 import { FaEye, FaHeart, FaPlus, FaMinus, FaShoppingCart } from 'react-icons/fa'
@@ -211,63 +207,7 @@ const Shop = () => {
 						<button className="shopBtn">Shop Now </button>
 					</div>
 				</div>
-				<div className=" bg-[#F4F6F8] p-20 ">
-					<h3 className="text-4xl font-bold">Fresh Vegetables </h3>
-					<div className=" fresVegetableCategory bg-[#fff] p-10 flex justify-between  ">
-						<div className="freshVegetableLeft">
-							<img loading='lazy' className='w-[500px]' src={fresh} alt="fresh " />
-						</div>
-						<div className="freshVegetableRight ">
-							<div className="flex items-center justify-between">
-							<div className="freshVegetableCard">
-								<div className="relative">
-								<div className="freshImgWrap">
-								<img className="h-[150px] w-[150px] showApple mr-5" src={apple} alt="apple" />
-								<img className="h-[150px] w-[150px] hideApple mr-5" src={apple2} alt="apple" />
-								</div>
-								<div className="percent">25%</div>
-								<span className='featureFress'>Feature</span>
-								</div>
-								<div>
-									<button>Fusion Foods </button>
-									<span className="my-2 block">Zest Oranges </span>
-									<small>450g</small>
-									<div className="flex items-center my-2">
-										<HiStar />
-										<HiStar />
-										<HiStar />
-										<HiStar />
-									</div>
-									<span className="text-[#C55C79] font-bold ">$89.00 - $100.00</span>
-								</div>
-							</div>
-							<div className="freshVegetableCard">
-								<div className="relative">
-								<div className="freshImgWrap">
-								<img className="h-[150px] w-[150px] showApple mr-5" src={apple} alt="apple" />
-								<img className="h-[150px] w-[150px] hideApple mr-5" src={apple2} alt="apple" />
-								</div>
-								<div className="percent">25%</div>
-								<span className='featureFress'>Feature</span>
-								</div>
-								<div>
-									<button>Fusion Foods </button>
-									<span className="my-2 block">Zest Oranges </span>
-									<small>450g</small>
-									<div className="flex items-center my-2">
-										<HiStar />
-										<HiStar />
-										<HiStar />
-										<HiStar />
-									</div>
-									<span className="text-[#C55C79] font-bold ">$89.00 - $100.00</span>
-								</div>
-							</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
+				
 				<Shops title="Nature's Bounty, Delivered Fresh" />
 				<Category />
 			</div>

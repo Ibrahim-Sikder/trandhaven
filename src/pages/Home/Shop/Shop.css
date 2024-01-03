@@ -178,19 +178,29 @@
 	top: 75px;
 	z-index: 2;
 }
+.fresVegetableCategory {
+	display: flex;
+	justify-content: space-between;
+}
 .freshVegetableLeft {
-	width: 45%;
+	width: 30%;
+	height: 435px;
 }
 .freshVegetableLeft img {
-	width: 800opx;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.freshVegetableRight {
+	width: 68%;
 }
 .freshVegetableCard {
-	width: 350px;
+	width: 400px;
 	padding: 25px;
-	border: 1px solid red;
 	display: flex;
 	align-items: center;
 	border-radius: 10px;
+	margin: 10px;
 }
 .freshVegetableCard button {
 	border: 1px solid #ddd;
