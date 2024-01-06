@@ -8,7 +8,7 @@
 	margin: 0;
 	padding: 0;
 }
-body {
+html, body {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 	font-family: 'Merriweather', serif;
@@ -105,6 +105,25 @@ body {
 .swiper-button-next{
     right:0px;
 }
+
+.scrollToTopBtn {
+	width: 40px;
+	height: 40px;
+	background: #00ab55;
+	color: white;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 9999 !important;
+	border-radius: 100%;
+	display: grid;
+	place-items: center;
+  transition:all .5s ease;
+  animation-delay: .5s;
+}
+
+
+
 
 @media only screen and (max-width: 1024px) {
 	.wrapContainer {

@@ -7,6 +7,7 @@ import fruit4 from '../../../../public/assets/fruit4.jpg'
 import fruit5 from '../../../../public/assets/fruit5.jpg'
 import fruit10 from '../../../../public/assets/shop.png'
 import Shops from './Shops'
+import RelatedProduct from './RelatedProduct'
 import Category from './Category'
 import { FaEye, FaHeart, FaPlus, FaMinus, FaShoppingCart } from 'react-icons/fa'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -164,6 +165,9 @@ const Shop = () => {
 														</div>
 													</div>
 												</form>
+										<div className="mt-10">
+										<RelatedProduct title="Related Product For You ! " />
+										</div>
 											</div>
 										</dialog>
 									</div>

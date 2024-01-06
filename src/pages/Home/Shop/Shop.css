@@ -12,6 +12,7 @@
 	overflow: hidden;
 	border-radius: 5px;
 }
+
 .quickView {
 	background: rgba(0, 0, 0, 0.479);
 	position: absolute;
@@ -270,7 +271,7 @@
 	.fresVegetableCategory {
 		display: block;
 	}
-	
+
 	.freshVegetableRight,
 	.freshVegetableLeft {
 		width: 100%;
