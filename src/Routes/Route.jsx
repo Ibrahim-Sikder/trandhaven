@@ -12,8 +12,8 @@ import Cancel from "../pages/Account/Cancel/Cancel";
 import Address from "../pages/Account/Address/Address";
 import WishList from "../pages/Wishlist/WishList";
 import OrderTracking from "../pages/OrderTracking/OrderTracking";
-
-
+import Dashboard from "../Layout/Dashboard";
+import Category from "../pages/Dashboard/Category/Category";
 export const router = createBrowserRouter([
     {
       path: "/",
@@ -68,6 +68,16 @@ export const router = createBrowserRouter([
       {
         path: 'address',
         element: <Address/>
+      },
+     ]
+    },
+    {
+      path: '/dashboard',
+     element: <Dashboard/>,
+     children: [
+      {
+        path: '/dashboard',
+        element: <Category/>
       },
      ]
     }

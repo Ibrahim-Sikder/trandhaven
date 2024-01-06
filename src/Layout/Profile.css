@@ -32,6 +32,12 @@
 	color: black !important;
 }
 
+.dashboardItems li {
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+}
+
 @media only screen and (max-width: 1024px) {
 	.sidebarWrap {
 		flex-wrap: wrap;
