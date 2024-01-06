@@ -4,6 +4,8 @@ import icon2 from '../../../../public/assets/icon2.png'
 import icon3 from '../../../../public/assets/icon3.png'
 import icon4 from '../../../../public/assets/icon4.png'
 import icon5 from '../../../../public/assets/icon5.png'
+import milk from '../../../../public/assets/milkBanner.jpg'
+import milk2 from '../../../../public/assets/milkBanner2.jpg'
 import { Link } from 'react-router-dom'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -159,7 +161,10 @@ const VegetableCategory = () => {
 					
 				</Slider>
 			</div>
-
+			<div className="flex items-center mt-8 justify-between">
+				<img src={milk} alt="" />
+				<img src={milk2} alt="" />
+			</div>
 			<div className="wrapContainer">
 			<div className="categoryCardWrap grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 place-content-center ">
 				{shopCategory.map((shop) => (
@@ -183,6 +188,7 @@ const VegetableCategory = () => {
 				))}
 			</div>
 			</div>
+			
 		</div>
 	)
 }

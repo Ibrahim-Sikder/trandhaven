@@ -202,6 +202,10 @@
 	align-items: center;
 	border-radius: 10px;
 	margin: 10px;
+	transition:all .5s cubic-bezier(0.51, 0.51, 0.73, 0.71)
+}
+.freshVegetableCard:hover {
+	border: 1px solid #ddd;
 }
 .freshVegetableCard button {
 	border: 1px solid #ddd;

@@ -4,6 +4,7 @@ import Shop from "../Shop/Shop";
 import Shops from "../Shop/Shops";
 import FreshVegetable from "../Shop/freshVegetable";
 import VegetableCategory from "../VegetableCategory/VegetableCategory";
+import TrendingTags from "./TrendingTags/TrendingTags";
 const Home = () => {
     return (
         <div>
@@ -14,9 +15,11 @@ const Home = () => {
           <div className="my-10">
           <Shops title="Popular Products of TrendHaven!"/>
           </div>
+          <TrendingTags/>
           <div>
           <Shops title="Recomended For You!"/>
           </div>
+        
           <About/>
         </div>
     );
