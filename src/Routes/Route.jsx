@@ -14,6 +14,7 @@ import WishList from "../pages/Wishlist/WishList";
 import OrderTracking from "../pages/OrderTracking/OrderTracking";
 import Dashboard from "../Layout/Dashboard";
 import Category from "../pages/Dashboard/Category/Category";
+import AllUsers from "../pages/Dashboard/AllUsers/AllUsers";
 export const router = createBrowserRouter([
     {
       path: "/",
@@ -78,6 +79,10 @@ export const router = createBrowserRouter([
       {
         path: '/dashboard',
         element: <Category/>
+      },
+      {
+        path: 'allusers',
+        element: <AllUsers/>
       },
      ]
     }
