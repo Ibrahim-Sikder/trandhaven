@@ -4,7 +4,7 @@ import { HiDatabase, HiOutlineLogout, HiOutlineShoppingCart } from 'react-icons/
 const Dashboard = () => {
 	return (
 		<div className="flex justify-between">
-			<aside className="bg-[#00ab55] w-[250px] min-h-screen p-5 text-white ">
+			<aside className="bg-[#00ab55] w-[20%] min-h-screen p-5 text-white mr-3">
 				<div className="flex justify-between flex-col min-h-screen ">
                 <div>
 					<ul className="dashboardItems">
@@ -17,10 +17,10 @@ const Dashboard = () => {
 							</Link>
 						</li>
 						<li>
-							<Link to="/dashboard/addItem">
+							<Link to="/dashboard/addproduct">
 								<div className="flex items-center">
 									<HiOutlineShoppingCart className="mr-2" />
-									<span> Add an Item</span>
+									<span> Add an Product </span>
 								</div>
 							</Link>
 						</li>
@@ -111,7 +111,9 @@ const Dashboard = () => {
 				</div>
                 </div>
 			</aside>
+			<div className="w-[80%]">
 			<Outlet />
+			</div>
 		</div>
 	)
 }

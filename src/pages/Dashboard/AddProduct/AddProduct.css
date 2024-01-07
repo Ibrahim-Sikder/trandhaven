@@ -1,0 +1,11 @@
+.productItemsWrap {
+	display: grid;
+	place-content: center;
+}
+.description {
+	width: 910px;
+	height: 180px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 10px;
+}

@@ -2,7 +2,7 @@
 	background-color: #00ab55;
 	color: #fff;
 }
-.tableWrap :where(th, tr, td) {
+.tableWrap :where(th, tr) {
 	border: 1px solid #ddd;
 	text-align: center;
 }

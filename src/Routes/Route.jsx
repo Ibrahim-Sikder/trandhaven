@@ -15,6 +15,7 @@ import OrderTracking from "../pages/OrderTracking/OrderTracking";
 import Dashboard from "../Layout/Dashboard";
 import Category from "../pages/Dashboard/Category/Category";
 import AllUsers from "../pages/Dashboard/AllUsers/AllUsers";
+import AddProduct from "../pages/Dashboard/AddProduct/AddProduct";
 export const router = createBrowserRouter([
     {
       path: "/",
@@ -83,6 +84,10 @@ export const router = createBrowserRouter([
       {
         path: 'allusers',
         element: <AllUsers/>
+      },
+      {
+        path: 'addproduct',
+        element: <AddProduct/>
       },
      ]
     }

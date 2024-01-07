@@ -48,7 +48,7 @@ const AllUsers = () => {
               {
                 allUsers.map(user=><tr key={user.id}>
                   <td>
-                    <div className="mask   h-[70px] w-[70px] mx-auto ">
+                    <div className="mask p-2  h-[60px] w-[60px] mx-auto ">
                       <img
                         loading="lazy"
                         className=" h-full rounded-full w-full object-cover text-center"
