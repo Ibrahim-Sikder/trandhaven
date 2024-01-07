@@ -6,7 +6,6 @@ import fruit3 from '../../../../public/assets/fruit3.jpg'
 import fruit4 from '../../../../public/assets/fruit4.jpg'
 import fruit5 from '../../../../public/assets/fruit5.jpg'
 import fruit10 from '../../../../public/assets/shop.png'
-import Shops from './Shops'
 import RelatedProduct from './RelatedProduct'
 import Category from './Category'
 import { FaEye, FaHeart, FaPlus, FaMinus, FaShoppingCart } from 'react-icons/fa'
@@ -212,7 +211,6 @@ const Shop = () => {
 					</div>
 				</div>
 				
-				<Shops title="Nature's Bounty, Delivered Fresh" />
 				<Category />
 			</div>
 		</div>

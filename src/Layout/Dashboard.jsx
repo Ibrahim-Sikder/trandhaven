@@ -9,7 +9,7 @@ const Dashboard = () => {
                 <div>
 					<ul className="dashboardItems">
 						<li className="">
-							<Link to="/dashboard/adminhome ">
+							<Link to="/dashboard ">
 								<div className="flex items-center">
 									<FaHome className="mr-2" />
 									<span> Admin Home</span>

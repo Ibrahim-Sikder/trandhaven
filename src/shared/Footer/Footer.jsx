@@ -1,6 +1,8 @@
 import './Footer.css'
 import { HiEnvelope,HiMiniPhone ,HiHome } from "react-icons/hi2";
 import { FaFacebook,FaInstagramSquare ,FaTwitter,FaLinkedin} from "react-icons/fa";
+import { TextField } from '@mui/material';
+import payment from '../../../public/assets/payment2.png'
 const Footer = () => {
     return (
         <div className='wrapContainer'>
@@ -61,13 +63,13 @@ const Footer = () => {
 
                 </div>
                 <div>
-                    <h3 className="text-xl font-bold">Social Media </h3>
-                    <ul>
-                        <li>Branding</li>
-                        <li>Design</li>
-                        <li>Marketing</li>
-                        <li>Advertisemen</li>
-                    </ul>
+                    <h3 className="text-xl font-bold">NEWSLETTER </h3>
+                    <p>Don’t miss out thousands of great deals & promotions.</p>
+                    <div>
+                    <TextField id="outlined-required" label="Email Address " /> <br />
+                    <button className='shopBtn mt-3 mb-5'>Subscribe </button>
+                    </div>
+                    <img src={payment} alt="" />
                 </div>
             </div>
         </div>
