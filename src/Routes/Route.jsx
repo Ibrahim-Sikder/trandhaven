@@ -19,6 +19,7 @@ import AddProduct from "../pages/Dashboard/AddProduct/AddProduct";
 import MyCart from "../pages/Dashboard/MyCart/MyCart";
 import Payment from "../pages/Dashboard/Payment/Payment";
 import ManageItems from "../pages/Dashboard/ManageItem/ManageItems";
+import Signup from "../pages/Signup/Signup";
 export const router = createBrowserRouter([
     {
       path: "/",
@@ -51,6 +52,10 @@ export const router = createBrowserRouter([
         {
           path: '/tracking-order',
           element: <OrderTracking/>
+        },
+        {
+          path: '/signup',
+          element: <Signup/>
         },
       ]
     },

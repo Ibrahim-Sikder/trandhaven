@@ -13,7 +13,7 @@ const Home = () => {
            <VegetableCategory/>
            <Shop/>
             <div>
-            <Shops3 title="Nature's Bounty, Delivered Fresh I m from shop 3 " />
+            <Shops3 title="Nature's Bounty, Delivered Fresh!" />
             </div>
            <FreshVegetable/>
           <div className="my-10">

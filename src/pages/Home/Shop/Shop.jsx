@@ -6,6 +6,11 @@ import fruit3 from '../../../../public/assets/fruit3.jpg'
 import fruit4 from '../../../../public/assets/fruit4.jpg'
 import fruit5 from '../../../../public/assets/fruit5.jpg'
 import fruit10 from '../../../../public/assets/shop.png'
+import shop from '../../../../public/assets/shop.png'
+import shop2 from '../../../../public/assets/shop2.jpg'
+import shop3 from '../../../../public/assets/shop3.jpg'
+import shop4 from '../../../../public/assets/shop4.jpg'
+import shop5 from '../../../../public/assets/shop5.jpg'
 import RelatedProduct from './RelatedProduct'
 import Category from './Category'
 import { FaEye, FaHeart, FaPlus, FaMinus, FaShoppingCart } from 'react-icons/fa'
@@ -36,7 +41,7 @@ const Shop = () => {
 			name: 'Apple',
 			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
 			price: 399,
-			img: fruit2
+			img: shop
 		},
 		{
 			id: 1,
@@ -58,6 +63,34 @@ const Shop = () => {
 			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
 			price: 399,
 			img: fruit5
+		},
+		{
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: shop2
+		},
+		{
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: shop3
+		},
+		{
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: shop4
+		},
+		{
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: shop5
 		}
 	]
 	return (

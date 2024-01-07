@@ -5,7 +5,8 @@ import { TextField } from '@mui/material';
 import payment from '../../../public/assets/payment2.png'
 const Footer = () => {
     return (
-        <div className='wrapContainer'>
+       <div className="bg-[#EFF0F5]">
+         <div className='wrapContainer '>
             <div className="footer">
                 <div className='trendHaven'>
                     <h3 className="text-3xl font-bold">Trendhaven</h3>
@@ -36,10 +37,13 @@ const Footer = () => {
                 <div>
                     <h3 className="text-xl font-bold">About</h3>
                     <ul>
-                        <li>About Us</li>
-                        <li>Contact Us</li>
-                        <li>Help Center</li>
-                        <li>FAQ</li>
+                        <li>About Zynix</li>
+                        <li>Contact Zynix</li>
+                        <li>Zynix Blog</li>
+                        <li>Zynix Card</li>
+                        <li>Zynix Exclusive </li>
+                        <li>Zynix Mart </li>
+                        <li>Digital Payment </li>
                     </ul>
                 </div>
                 <div>
@@ -52,14 +56,16 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div>
-                    <h3 className="text-xl font-bold">Legal</h3>
+                    <h3 className="text-xl font-bold"> Customer Care</h3>
                     <ul>
-                        <li>Terms of use</li>
-                        <li>Privacy policy</li>
+                        <li>Help Center</li>
+                        <li>Returns & Refunds</li>
                         <li>Cookie policy</li>
+                        <li>Contact Us</li>
+                        <li>Terms & Conditions</li>
+                        <li>CCMS - Central Complain </li>
                     </ul>
-                    
-
+                   
 
                 </div>
                 <div>
@@ -69,10 +75,14 @@ const Footer = () => {
                     <TextField id="outlined-required" label="Email Address " /> <br />
                     <button className='shopBtn mt-3 mb-5'>Subscribe </button>
                     </div>
+                   <div>
+                    <h5 className="text-xl mb-3">Payment Method </h5>
                     <img src={payment} alt="" />
+                   </div>
                 </div>
             </div>
         </div>
+       </div>
     );
 };
 
