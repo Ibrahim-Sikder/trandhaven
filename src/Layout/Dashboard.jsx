@@ -1,5 +1,5 @@
 import { Link, Outlet } from 'react-router-dom'
-import { FaShoppingCart, FaWallet, FaCalendarAlt, FaHome, FaBook, FaUsers, FaHeadset } from 'react-icons/fa'
+import { FaShoppingCart, FaWallet, FaHome, FaBook, FaUsers, FaHeadset } from 'react-icons/fa'
 import { HiDatabase, HiOutlineLogout, HiOutlineShoppingCart } from 'react-icons/hi'
 const Dashboard = () => {
 	return (
@@ -53,15 +53,9 @@ const Dashboard = () => {
 								</div>
 							</Link>
 						</li>
+						
 						<li>
-							<Link to="/">
-								<div className="flex items-center">
-									<FaCalendarAlt className="mr-2" /> <span>Reservations</span>
-								</div>
-							</Link>
-						</li>
-						<li>
-							<Link to="/">
+							<Link to="/dashboard/payment">
 								<div className="flex items-center">
 									<FaWallet className="mr-2" /> <span>Payment History</span>
 								</div>
@@ -88,10 +82,10 @@ const Dashboard = () => {
 							</Link>
 						</li>
 						<li>
-							<Link to="/menu"> Our Menu</Link>
+							<Link to="/menu"> Our Product </Link>
 						</li>
 						<li>
-							<Link to="/order/salad">Order Food</Link>
+							<Link to="/order/salad">Order Product</Link>
 						</li>
 					</ul>
 				</div>

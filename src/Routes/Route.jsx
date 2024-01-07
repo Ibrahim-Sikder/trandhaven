@@ -17,6 +17,8 @@ import Category from "../pages/Dashboard/Category/Category";
 import AllUsers from "../pages/Dashboard/AllUsers/AllUsers";
 import AddProduct from "../pages/Dashboard/AddProduct/AddProduct";
 import MyCart from "../pages/Dashboard/MyCart/MyCart";
+import Payment from "../pages/Dashboard/Payment/Payment";
+import ManageItems from "../pages/Dashboard/ManageItem/ManageItems";
 export const router = createBrowserRouter([
     {
       path: "/",
@@ -93,6 +95,14 @@ export const router = createBrowserRouter([
       {
         path: 'mycart',
         element: <MyCart/>
+      },
+      {
+        path: 'payment',
+        element: <Payment/>
+      },
+      {
+        path: 'manageitems',
+        element: <ManageItems/>
       },
      ]
     }

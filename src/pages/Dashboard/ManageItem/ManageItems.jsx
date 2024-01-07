@@ -1,27 +1,23 @@
-import { FaTrashAlt } from 'react-icons/fa'
+import { FaEdit, FaTrashAlt } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import img from '../../../../public/assets/apple.jpg'
-const MyCart = () => {
+const ManageItems = () => {
 	const allUsers = [
 		{
 			id: 1,
 			name: 'Apple',
 			price: 550
 		},
-        {
+		{
 			id: 1,
 			name: 'Apple',
 			price: 550
-		},
+		}
 	]
 	return (
 		<div className="w-full">
 			<div className="uppercase font-semibold h-[60px] flex justify-evenly items-center mb-5">
-				<h3 className="text-3xl">Total Items:55 </h3>
-				<h3 className="text-3xl">Total Price: $8</h3>
-				<Link to="/dashboard/payment">
-					<button className="btn btn-warning btn-sm">PAY</button>
-				</Link>
+				<h3 className="text-3xl">Manage Items </h3>
 			</div>
 			<div className="overflow-x-auto w-full">
 				<table className="table ">
@@ -31,7 +27,7 @@ const MyCart = () => {
 							<th>Vegetable</th>
 							<th>Product Name</th>
 							<th>Price</th>
-							<th>Action</th>
+							<th colSpan={2}>Action</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -51,9 +47,12 @@ const MyCart = () => {
 								<td>{user.name}</td>
 								<td> ${user.price} </td>{' '}
 								<td>
-									<button className="btn btn-ghost bg-red-600  text-white">
-										<FaTrashAlt />
-									</button>
+									<Link href="/b2bdashboard/b2bagent/add-user/update">
+										<FaEdit size={25} className="text-[#00ab55]" />
+									</Link>
+								</td>
+								<td>
+									<FaTrashAlt size={25} className="text-red-500" />
 								</td>
 							</tr>
 						))}
@@ -64,4 +63,4 @@ const MyCart = () => {
 	)
 }
 
-export default MyCart
+export default ManageItems
