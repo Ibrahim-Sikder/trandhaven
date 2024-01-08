@@ -1,5 +1,19 @@
+.signupWrap {
+	width: 800px;
+	margin: 50px auto;
+}
+.SignupFormWrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 0;
+}
 .signupInput {
 	width: 310px !important;
+}
+.businessInput,
+.businessBtn {
+	width: 400px !important;
 }
 .SingleInput {
 	margin-right: 10px !important;
@@ -19,7 +33,7 @@
 .line {
 	width: 150px;
 	height: 1px;
-	background: red;
+	background: #00ab55;
 	transform: rotate(90deg);
 }
 .devider {

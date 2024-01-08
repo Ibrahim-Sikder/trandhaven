@@ -20,6 +20,7 @@ import MyCart from "../pages/Dashboard/MyCart/MyCart";
 import Payment from "../pages/Dashboard/Payment/Payment";
 import ManageItems from "../pages/Dashboard/ManageItem/ManageItems";
 import Signup from "../pages/Signup/Signup";
+import BusinessAccount from "../pages/Signup/BusinessAccount";
 export const router = createBrowserRouter([
     {
       path: "/",
@@ -56,6 +57,10 @@ export const router = createBrowserRouter([
         {
           path: '/signup',
           element: <Signup/>
+        },
+        {
+          path: '/register',
+          element: <BusinessAccount/>
         },
       ]
     },
