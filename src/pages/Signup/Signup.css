@@ -11,9 +11,14 @@
 .signupInput {
 	width: 310px !important;
 }
+
 .businessInput,
-.businessBtn {
+.businessBtn, .loginBtn {
 	width: 400px !important;
+}
+.businessFormWrap {
+	display: grid;
+	place-items: center;
 }
 .SingleInput {
 	margin-right: 10px !important;

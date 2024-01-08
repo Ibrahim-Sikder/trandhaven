@@ -7,8 +7,8 @@ const BusinessAccount = () => {
 		<div className="">
 			<div className="signupWrap">
 				<h3 className="text-3xl font-bold text-center mb-5  capitalize">Create an Zynax Account </h3>
-				<form className="">
-					<div className="my-5">
+				<form className="businessFormWrap">
+					<div className="my-3">
 						<TextField
 							className="businessInput"
 							label="Business Name "
@@ -16,7 +16,7 @@ const BusinessAccount = () => {
 							size="small"
 						/>
 					</div>
-					<div className="my-5">
+					<div className="my-3">
 						<TextField
 							className="businessInput"
 							label="Business Email "
@@ -27,7 +27,7 @@ const BusinessAccount = () => {
 					<div className="my-5">
 						<TextField className="businessInput" label="Password" id="outlined-size-small" size="small" />
 					</div>
-					<div className="mb-5">
+					<div className="mb-3">
 						<FormControl className="businessInput">
 							<InputLabel className="businessInput" htmlFor="grouped-native-select">
 								Select Business Location
@@ -54,8 +54,8 @@ const BusinessAccount = () => {
 						<span className="ml-3"> I only want to buy on eBay. I don't want to sell.</span>
 					</div>
 					<span className="my-5 block ">
-						By Creating an account, you agree to our User Agreement and acknowledge reading our User Privacy
-						Notice.
+						By Creating an account, you agree to our <small className='text-[#00AB55]'>User Agreement</small> and <br /> acknowledge reading our <small className='text-[#00AB55]'>User Privacy
+						Notice</small>.
 					</span>
 
                     <button className='signupBtn bg-[#00AB55] text-white businessBtn'>Create Account </button>

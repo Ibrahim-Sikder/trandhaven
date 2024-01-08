@@ -21,6 +21,7 @@ import Payment from "../pages/Dashboard/Payment/Payment";
 import ManageItems from "../pages/Dashboard/ManageItem/ManageItems";
 import Signup from "../pages/Signup/Signup";
 import BusinessAccount from "../pages/Signup/BusinessAccount";
+import Login from "../pages/Login/Login";
 export const router = createBrowserRouter([
     {
       path: "/",
@@ -61,6 +62,10 @@ export const router = createBrowserRouter([
         {
           path: '/register',
           element: <BusinessAccount/>
+        },
+        {
+          path: '/login',
+          element: <Login/>
         },
       ]
     },
