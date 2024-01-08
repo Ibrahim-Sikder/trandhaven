@@ -8,11 +8,11 @@
 	margin: 0;
 	padding: 0;
 }
-html, body {
+html,
+body {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 	font-family: 'Merriweather', serif;
-	
 }
 .awssld__controls button {
 	background: #00ab55 !important;
@@ -47,7 +47,7 @@ html, body {
 	background: #00ab55 !important;
 }
 .awssld__bullets .awssld__bullets--active {
-	background: #FFB240 !important;
+	background: #ffb240 !important;
 }
 .swiper-button-prev,
 .swiper-button-next,
@@ -98,12 +98,13 @@ html, body {
 	color: #fff;
 }
 
-.swiper-button-prev, .swiper-button-next{
-    left: 0;
-    top: 230px;
+.swiper-button-prev,
+.swiper-button-next {
+	left: 0;
+	top: 230px;
 }
-.swiper-button-next{
-    right:0px;
+.swiper-button-next {
+	right: 0px;
 }
 
 .scrollToTopBtn {
@@ -118,11 +119,12 @@ html, body {
 	border-radius: 100%;
 	display: grid;
 	place-items: center;
-  transition:all .5s cubic-bezier(0.51, 0.51, 0.73, 0.71);
+	transition: all .5s cubic-bezier(0.51, 0.51, 0.73, 0.71);
 }
 
-
-
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+	border-radius: 15px !important;
+}
 
 @media only screen and (max-width: 1024px) {
 	.wrapContainer {
