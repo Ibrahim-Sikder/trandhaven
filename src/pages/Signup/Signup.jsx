@@ -10,8 +10,10 @@ const Signup = () => {
 	return (
 		<div className="">
 			<div className="signupWrap">
-				<h3 className="text-3xl font-bold text-center mb-5  capitalize">Create an Zynax Account </h3>
-               
+				<h3 className="text-3xl font-bold text-center mb-5  capitalize">Create a Zynax Account </h3>
+               <div className="flex lg:justify-end md:justify-center">
+               <Link to='/register'><span>Create a <b>business account</b> </span></Link>
+               </div>
 				<form className="SignupFormWrap">
 					<div>
                     <div className="flex items-center">
@@ -35,13 +37,13 @@ const Signup = () => {
                             <div>or</div>
                             <div className="line"></div>
                     </div>
-                    <div>
+                    <div className='lg:mt-0 mt-5    '>
                     <button className='signupBtn mb-5 text-black  '><img className='w-10 h-10' src={google} alt="" /> <span>Continoue With Google </span> </button>
                     <button className='signupBtn bg-[#3F63AB] text-white '><FaFacebookF className='mr-5' size={25} /> <span>Continoue With Facebook </span> </button>
                     <span className='mt-3 block '>Already a member? <Link to='/login'>Sing In </Link> </span>
                     </div>
 				</form>
-                <Link to='/register'><span>Create a <b>business account</b> </span></Link>
+               
 				
 			</div>
 		</div>

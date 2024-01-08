@@ -13,7 +13,8 @@
 }
 
 .businessInput,
-.businessBtn, .loginBtn {
+.businessBtn,
+.loginBtn {
 	width: 400px !important;
 }
 .businessFormWrap {
@@ -47,4 +48,25 @@
 	justify-content: space-between;
 	flex-direction: column;
 	align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+	.signupWrap {
+		width: 100%;
+	}
+	.SignupFormWrap {
+		flex-direction: column;
+	}
+	.devider {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.businessInput,
+	.businessBtn,
+	.loginBtn,
+	.signupInput {
+		width: 300px !important;
+	}
 }

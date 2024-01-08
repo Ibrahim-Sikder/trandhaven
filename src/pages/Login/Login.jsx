@@ -6,9 +6,11 @@ const Login = () => {
 		<div>
 			<div className="signupWrap">
 				<div className="text-center">
-                <h3 className="text-3xl font-bold text-center mb-5  capitalize">Hello</h3>
-                <span>Sign In Zynax or <b className='border-b-2 border-[#00AB55]'>create an account </b></span>
-                </div>
+					<h3 className="text-3xl font-bold text-center mb-5  capitalize">Hello</h3>
+					<span>
+						Sign In Zynax or <b className="border-b-2 border-[#00AB55]">create an account </b>
+					</span>
+				</div>
 				<form className="businessFormWrap">
 					<div className="my-5">
 						<TextField
@@ -30,6 +32,14 @@ const Login = () => {
 							<FaFacebookF className="mr-5" size={25} /> <span>Continoue With Facebook </span>{' '}
 						</button>
 					</div>
+					<div className="text-center w-[300px] mx-auto  mt-3">
+                        <div className="flex justify-center items-center">
+                        <input className='mr-2' type="checkbox" />
+                        <span>Stay signed in</span>
+                        </div>
+                        <span className='block mx-auto w-[250px]'> Using a public or shared device? Uncheck to protect your account.</span>
+                    </div>
+                   
 				</form>
 			</div>
 		</div>
