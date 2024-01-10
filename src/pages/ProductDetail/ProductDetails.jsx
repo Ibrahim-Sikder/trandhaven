@@ -66,7 +66,7 @@ const ProductDetails = () => {
                 largeImage={{
                   src: image,
                   width: 800,
-                  height: 1800,
+                  height: 600,
                 }}
                 enlargedImageContainerClassName="enlargedImageContainer"
                 enlargedImageClassName="enlargedImage"
