@@ -92,7 +92,22 @@ const Shop = () => {
 			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
 			price: 399,
 			img: shop5
-		}
+		},
+		{
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: fruit4
+		},
+		{
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: fruit5
+		},
+		
 	]
 
 
@@ -104,7 +119,7 @@ const Shop = () => {
 					<h3 className="text-4xl text-center md:text-left font-bold mb-8 shopTitle">
 						Nature's Bounty, Delivered Fresh
 					</h3>
-					<div className="grid gric-cols-1 place-items-center md:grid-cols-3 lg:grid-cols-4 gap-10">
+					<div className="grid gric-cols-1 place-items-center md:grid-cols-4 lg:grid-cols-5 gap-10">
 						{shopData.map((shop) => (
 							<div key={shop.id} className="shopCard">
 								<div className="imgWrap">

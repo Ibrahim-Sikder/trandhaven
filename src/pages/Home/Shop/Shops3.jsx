@@ -94,7 +94,21 @@ const Shops3 = ({title}) => {
 			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
 			price: 399,
 			img: fruit9
-		}
+		},
+		{
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: fruit6
+		},
+		{
+			id: 1,
+			name: 'Apple',
+			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
+			price: 399,
+			img: fruit7
+		},
 	]
 	
 
@@ -102,7 +116,7 @@ const Shops3 = ({title}) => {
 		<div className="wrapContainer">
 			<div className='mt-[80px]'>
 				<h3 className="text-4xl text-center md:text-left font-bold mb-8 shopTitle">{title}</h3>
-				<div className="shopCardsWrap">
+				<div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-10">
 					{shopData.map((shop) => (
 						<div key={shop.id} className="shopCard">
 							<div className="imgWrap">
