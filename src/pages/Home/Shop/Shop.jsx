@@ -21,6 +21,7 @@ import 'swiper/css/navigation'
 import { Pagination, Navigation } from 'swiper/modules'
 import { useState } from 'react'
 
+
 const Shop = () => {
 	const [ order, setOrder ] = useState(0)
 
@@ -93,14 +94,17 @@ const Shop = () => {
 			img: shop5
 		}
 	]
+
+
+
 	return (
-		<div className="mt-[80px]">
-			<div className="wrapContainer">
+		<div className="mt-[80px] "  >
+			<div className="wrapContainer " >
 				<div>
 					<h3 className="text-4xl text-center md:text-left font-bold mb-8 shopTitle">
 						Nature's Bounty, Delivered Fresh
 					</h3>
-					<div className="shopCardsWrap">
+					<div className="grid gric-cols-1 place-items-center md:grid-cols-3 lg:grid-cols-4 gap-10">
 						{shopData.map((shop) => (
 							<div key={shop.id} className="shopCard">
 								<div className="imgWrap">

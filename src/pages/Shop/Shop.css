@@ -3,11 +3,10 @@
 }
 .shopContainer {
 	display: flex;
-	justify-content: space-between;
 }
 
 .shopContainerLeftSide {
-	width: 300px;
+	width: 280px;
 	border-right: 1px solid #ddd;
 }
 .productCategories ul li,
@@ -41,13 +40,9 @@
 	align-items: center;
 	justify-content: center;
 }
-.containerShopCard {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	place-items: center;
-}
+
 .shopCard2 {
-	width: 280px;
+	width: 260px;
 	margin: 15px;
 }
 .sortProduct {
@@ -99,7 +94,7 @@
 	transition: all .5s ease;
 }
 .allCategory span:hover {
-	color: #FFB240;
+	color: #ffb240;
 }
 @media only screen and (max-width: 1024px) {
 	.shopContainer {

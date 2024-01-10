@@ -68,7 +68,8 @@ const VegetableCategory = () => {
 
 	return (
 		<div className='wrapContainer'>
-			<div className="slidersWraps">
+			<div className="slidersWraps mt-[80px]">
+				<h3 className="text-4xl font-bold  transition-all border-b-black ">Explore Popular Categories</h3>
 				<Slider {...settings}>
 					<div className="slider">
 					<div className="vegetabelCategory">
@@ -161,12 +162,12 @@ const VegetableCategory = () => {
 					
 				</Slider>
 			</div>
-			<div className="flex items-center mt-8 justify-between">
+			<div className="freshMilkWrap mt-8 justify-between">
 				<img src={milk} alt="" />
 				<img src={milk2} alt="" />
 			</div>
 			<div className="wrapContainer">
-			<div className="categoryCardWrap grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 place-content-center ">
+			{/* <div className="categoryCardWrap grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 place-content-center ">
 				{shopCategory.map((shop) => (
 					<div key={shop.id} className="vegetableShopCategory">
 						<div className="categoryCardContent flex items-center justify-between">
@@ -186,7 +187,7 @@ const VegetableCategory = () => {
 						</div>
 					</div>
 				))}
-			</div>
+			</div> */}
 			</div>
 			
 		</div>

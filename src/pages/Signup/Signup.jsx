@@ -12,7 +12,7 @@ const Signup = () => {
 			<div className="signupWrap">
 				<h3 className="text-3xl font-bold text-center mb-5  capitalize">Create a Zynax Account </h3>
                <div className="flex lg:justify-end md:justify-center">
-               <Link to='/register'><span>Create a <b>business account</b> </span></Link>
+               <Link to='/register'><span>Create a <b className='border-b-2 border-[#00AB55]'>business account</b> </span></Link>
                </div>
 				<form className="SignupFormWrap">
 					<div>

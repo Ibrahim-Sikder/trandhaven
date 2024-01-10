@@ -314,7 +314,7 @@ const Shop = () => {
 							</div>
 						</div>
 
-						<div className="containerShopCard">
+						<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-2">
 							{shopData.map((shop) => (
 								<div key={shop.id} className="shopCard shopCard2">
 									<div className="imgWrap">
