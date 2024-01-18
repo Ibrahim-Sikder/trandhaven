@@ -16,7 +16,7 @@ import fruit11 from '../../../../public/assets/vegetable26.jpg'
 import fruit12 from '../../../../public/assets/vegetable27.jpg'
 import fruit13 from '../../../../public/assets/vegetable28.jpg'
 import fruit14 from '../../../../public/assets/vegetable5.png'
-import { FaEye, FaHeart,FaPlus ,FaMinus,FaShoppingCart   } from 'react-icons/fa'
+import { FaEye, FaHeart, FaPlus, FaMinus, FaShoppingCart } from 'react-icons/fa'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -24,7 +24,7 @@ import 'swiper/css/navigation'
 import { Pagination, Navigation } from 'swiper/modules'
 import { useState } from 'react'
 
-const Shops = ({title}) => {
+const Shops = ({ title }) => {
 	const [ order, setOrder ] = useState(0)
 
 	const incrementOrder = () => {
@@ -108,9 +108,8 @@ const Shops = ({title}) => {
 			desc: '"Fruitful Living: Nourishing Your Health, One Bite at a Time"',
 			price: 399,
 			img: fruit14
-		},
+		}
 	]
-	
 
 	return (
 		<div className="wrapContainer">
@@ -153,39 +152,35 @@ const Shops = ({title}) => {
 																<StarBorder className="shopReviewIcon" />
 																<StarBorder className="shopReviewIcon" />
 															</span>
-                                                             <p className='ml-2'> 99 Customer review </p>
-                                                        
+															<p className="ml-2"> 99 Customer review </p>
 														</div>
-                                                        <div className="percentage">
-                                                            -50%
-                                                        </div>
+														<div className="percentage">-50%</div>
 														<div className="mt-8">
-                                                        <Swiper
-															className="shopSlider"
-															pagination={{
-																type: ''
-															}}
-															navigation={true}
-															modules={[ Pagination, Navigation ]}
-														>
-															<SwiperSlide className="">
-																<img src={fruit2} alt="category" />
-															</SwiperSlide>
-															<SwiperSlide className="">
-																<img src={fruit3} alt="category" />
-															</SwiperSlide>
-															<SwiperSlide className="">
-																<img src={fruit4} alt="category" />
-															</SwiperSlide>
-															<SwiperSlide className="">
-																<img src={fruit5} alt="category" />
-															</SwiperSlide>
-															<SwiperSlide className="">
-																<img src={fruit10} alt="category" />
-															</SwiperSlide>
-														</Swiper>
-                                                        </div>
-                                                      
+															<Swiper
+																className="shopSlider"
+																pagination={{
+																	type: ''
+																}}
+																navigation={true}
+																modules={[ Pagination, Navigation ]}
+															>
+																<SwiperSlide className="">
+																	<img src={fruit2} alt="category" />
+																</SwiperSlide>
+																<SwiperSlide className="">
+																	<img src={fruit3} alt="category" />
+																</SwiperSlide>
+																<SwiperSlide className="">
+																	<img src={fruit4} alt="category" />
+																</SwiperSlide>
+																<SwiperSlide className="">
+																	<img src={fruit5} alt="category" />
+																</SwiperSlide>
+																<SwiperSlide className="">
+																	<img src={fruit10} alt="category" />
+																</SwiperSlide>
+															</Swiper>
+														</div>
 													</div>
 													<div className="modalRightSide ml-8">
 														<span>BDT</span>
@@ -198,11 +193,20 @@ const Shops = ({title}) => {
 															pariatur non iure aspernatur, voluptatem soluta excepturi
 															dolor.
 														</p>
-														<span>Availability: ৫৫৫ <small className='text-[#00AB55]'>in stock </small> </span>
+														<span>
+															Availability: ৫৫৫{' '}
+															<small className="text-[#00AB55]">in stock </small>{' '}
+														</span>
 														<div className="increaseDecressBtnWrap">
-															<small onClick={decrementOrder}> <FaMinus />  </small>
-															<span>  { order}  </span>
-															<small onClick={incrementOrder}> <FaPlus/> </small>
+															<small onClick={decrementOrder}>
+																{' '}
+																<FaMinus />{' '}
+															</small>
+															<span> {order} </span>
+															<small onClick={incrementOrder}>
+																{' '}
+																<FaPlus />{' '}
+															</small>
 														</div>
 														<button className="orderBtn">Add To Cart </button>
 													</div>
@@ -226,15 +230,15 @@ const Shops = ({title}) => {
 									BDT <b>{shop.price}৳</b>
 								</span>
 
-								<button className="addToCardBtn flex items-center justify-center "> <FaShoppingCart className='mr-2' />  <span>Add to cart</span></button>
+								<button className="addToCardBtn flex items-center justify-center ">
+									{' '}
+									<FaShoppingCart className="mr-2" /> <span>Add to cart</span>
+								</button>
 							</div>
 						</div>
 					))}
 				</div>
 			</div>
-		
-	
-	
 		</div>
 	)
 }
